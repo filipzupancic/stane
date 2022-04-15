@@ -11,7 +11,15 @@
                 <div class="hidden ml-10 space-x-8 lg:block">
                     <a href="/" class="font-medium text-gray-500 hover:text-gray-900">DOMOV</a>
                 </div>
-
+                <div class="hidden ml-10 space-x-8 lg:block">
+                    <a href="/stroski" class="font-medium text-gray-500 hover:text-gray-900">STROŠKI</a>
+                </div>
+                <div class="hidden ml-10 space-x-8 lg:block">
+                    <a href="/co2" class="font-medium text-gray-500 hover:text-gray-900">C02</a>
+                </div>
+                <div class="hidden ml-10 space-x-8 lg:block">
+                    <a href="/portfelj" class="font-medium text-gray-500 hover:text-gray-900">PORTFELJ</a>
+                </div>
             </div>
             @guest
             <div class="ml-10 space-x-4">
@@ -35,6 +43,15 @@
         </div>
         <div class="py-4 flex flex-wrap justify-center space-x-6 lg:hidden">
             <a href="/" class="text-base font-medium text-gray-500 hover:text-gray-50"> DOMOV </a>
+        </div>
+        <div class="py-4 flex flex-wrap justify-center space-x-6 lg:hidden">
+            <a href="/stroski" class="text-base font-medium text-gray-500 hover:text-gray-50"> STROSKI </a>
+        </div>
+        <div class="py-4 flex flex-wrap justify-center space-x-6 lg:hidden">
+            <a href="/co2" class="text-base font-medium text-gray-500 hover:text-gray-50"> CO2 </a>
+        </div>
+        <div class="py-4 flex flex-wrap justify-center space-x-6 lg:hidden">
+            <a href="/portfelj" class="text-base font-medium text-gray-500 hover:text-gray-50"> PORTFELJ </a>
         </div>
     </nav>
 </header>
