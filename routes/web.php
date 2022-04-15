@@ -21,6 +21,14 @@ Route::get('/stroski', function () {
     return view('costs');
 })->name('costs');
 
+Route::get('/co2', function () {
+    return view('co2');
+})->name('co2');
+
+Route::get('/portfelj', function () {
+    return view('investments');
+})->name('investments');
+
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth'])->name('dashboard');
