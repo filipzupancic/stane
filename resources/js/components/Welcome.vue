@@ -9,7 +9,7 @@
           Stane ti pomaga pri vsem kar stane.
         </p>
 
-        <div class="py-8">
+        <div class="pt-8">
         <radial-progress-bar :diameter="300" :completed-steps="5" :total-steps="10">
           50%
         </radial-progress-bar>
