@@ -14,6 +14,10 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
+    return view('home');
+})->name('home');
+
+Route::get('/kredit', function () {
     return view('welcome');
 })->name('welcome');
 
@@ -21,15 +25,15 @@ Route::get('/stroski', function () {
     return view('costs');
 })->name('costs');
 
-Route::get('/co2', function () {
+Route::get('/eko', function () {
     return view('co2');
 })->name('co2');
 
-Route::get('/portfelj', function () {
+Route::get('/nalozbe', function () {
     return view('investments');
 })->name('investments');
 
-Route::get('/dashboard', function () {
+Route::get('/profil', function () {
     return view('dashboard');
 })->middleware(['auth'])->name('dashboard');
 

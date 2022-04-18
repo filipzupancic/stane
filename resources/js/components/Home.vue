@@ -5,13 +5,28 @@
                 <p
                     class="mt-1 text-4xl font-extrabold text-gray-900 sm:text-5xl sm:tracking-tight lg:text-6xl"
                 >
-                    Hej, Urška
+                    Hej, Mojca
                 </p>
                 <p class="max-w-xl mt-5 mx-auto text-xl text-gray-500">
-                    Tvoji ogljični odtis.
+                    Stane ti pomaga pri vsem, kar stane.
                 </p>
+
+                <div class="pt-8">
+                    <radial-progress-bar
+                        :diameter="300"
+                        :completed-steps="5"
+                        :total-steps="10"
+                    >
+                        <p
+                            class="mt-1 text-4xl font-extrabold text-gray-900 sm:text-5xl sm:tracking-tight lg:text-6xl"
+                        >
+                            100%
+                        </p>
+                    </radial-progress-bar>
+                </div>
             </div>
         </div>
+
         <beautiful-chat
             :participants="participants"
             :titleImageUrl="titleImageUrl"
@@ -41,7 +56,7 @@
 </template>
 
 <script>
-import { defineComponent } from "vue";
+import { ref, defineComponent } from "vue";
 
 export default defineComponent({
     data() {
@@ -61,15 +76,13 @@ export default defineComponent({
                     type: "text",
                     author: `user1`,
                     data: {
-                        text: `Živjo Urška, kako ti lahko pomagam?`,
+                        text: `Hej Mojca, kako ti lahko pomagam?`,
                     },
                 },
                 {
                     type: "text",
                     author: `me`,
-                    data: {
-                        text: `Živjo, potrebujem pomoč pri pridobivanju ponudb za stanovanjska posojila.`,
-                    },
+                    data: { text: `Živjo, potrebujem pomoč pri pridobivanju ponudb za stanovanjska posojila.` },
                 },
                 {
                     type: "text",
@@ -150,7 +163,22 @@ export default defineComponent({
         },
     },
     setup() {
-        return {};
+        const completedSteps = ref(0);
+        const totalSteps = ref(10);
+
+        return {
+            completedSteps,
+            totalSteps,
+        };
     },
 });
 </script>
+
+<style scoped>
+.radial-progress {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+</style>

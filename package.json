@@ -22,8 +22,12 @@
         "vue-loader": "^16.8.3"
     },
     "dependencies": {
+        "@heroicons/vue": "^1.0.6",
+        "@vue-hero-icons/solid": "^1.7.2",
         "vue": "^3.2.33",
+        "vue-bot-ui": "^0.2.8",
         "vue-router": "^4.0.14",
+        "vue3-beautiful-chat": "^3.2.0",
         "vue3-radial-progress": "^1.1.1"
     }
 }
