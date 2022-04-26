@@ -8,6 +8,8 @@
 
     <title>{{ config('app.name', 'Stane') }}</title>
 
+    <link rel="shortcut icon" type="image/x-icon" href="{{ URL::to('https://tailwindui.com/img/logos/workflow-mark-indigo-600.svg') }}"/>
+
     <!-- Fonts -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap">
 

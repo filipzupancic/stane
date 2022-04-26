@@ -4,7 +4,9 @@ import Home from '../components/Home'
 import Costs from '../components/Costs'
 import Co2 from '../components/Co2'
 import Investments from '../components/Investments'
-import Dashboard from "../components/Dashboard.vue";
+import Dashboard from '../components/Dashboard'
+import AddDocument from '../components/documents/AddDocument'
+import EditDocument from '../components/documents/EditDocument'
 
 
 const routes = [
@@ -38,6 +40,17 @@ const routes = [
         name: 'dashboard',
         component: Dashboard
     },
+    {
+        path: '/documents/add',
+        name: 'documents.add',
+        component: AddDocument
+    },
+    {
+        path: '/documents/:id/edit',
+        name: 'documents.edit',
+        component: EditDocument,
+        props: true
+    }
 ]
 
 export default createRouter({
