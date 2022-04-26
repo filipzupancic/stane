@@ -13,30 +13,11 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('home');
-})->name('home');
-
-Route::get('/kredit', function () {
-    return view('welcome');
-})->name('welcome');
-
-Route::get('/stroski', function () {
-    return view('costs');
-})->name('costs');
-
-Route::get('/eko', function () {
-    return view('co2');
-})->name('co2');
-
-Route::get('/nalozbe', function () {
-    return view('investments');
-})->name('investments');
-
-Route::get('/profil', function () {
-    return view('dashboard');
-})->middleware(['auth'])->name('dashboard');
-
+Route::get('/{any?}', [
+    function () {
+        return view('welcome');
+    }
+])->where('any', '.*');
 
 
 require __DIR__.'/auth.php';
