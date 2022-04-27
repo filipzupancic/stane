@@ -5,6 +5,8 @@ import Costs from '../components/Costs'
 import Co2 from '../components/Co2'
 import Investments from '../components/Investments'
 import Dashboard from '../components/Dashboard'
+import Notifications from '../components/Notifications'
+import Documents from '../components/Documents'
 import AddDocument from '../components/documents/AddDocument'
 import EditDocument from '../components/documents/EditDocument'
 
@@ -34,6 +36,16 @@ const routes = [
         path: '/nalozbe',
         name: 'investments',
         component: Investments
+    },
+    {
+        path: '/dokumenti',
+        name: 'documents',
+        component: Documents
+    },
+    {
+        path: '/obvestila',
+        name: 'notifications',
+        component: Notifications
     },
     {
         path: '/profil',

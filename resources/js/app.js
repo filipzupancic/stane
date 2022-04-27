@@ -12,6 +12,8 @@ import Co2 from './components/Co2'
 import Investments from './components/Investments'
 import Dashboard from './components/Dashboard'
 import Home from './components/Home'
+import Notifications from './components/Notifications'
+import Documents from './components/Documents'
 
 createApp({
     components: {
@@ -21,6 +23,8 @@ createApp({
         Investments,
         Dashboard,
         Home,
+        Notifications,
+        Documents,
     }
 })
 .use(router)
