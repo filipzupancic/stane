@@ -11,8 +11,8 @@
                     Vzemi kredit.
                 </p>
 
-                <div @click="clickedRadialBar" class="pt-8">
-                    <component v-for="(component, index) in fields" :key="index" :is="component.comp" v-bind="component.props">
+                <div v-for="(component, index) in fields" :key="index" v-on:click="component.clickfunc" class="pt-8">
+                    <component :is="component.comp" v-bind="component.props" >
                                                 <p
                             class="mt-1 text-4xl font-extrabold text-gray-900 sm:text-5xl sm:tracking-tight lg:text-6xl"
                         >
@@ -47,7 +47,7 @@ export default defineComponent({
 
         var obj={"props":{"diameter":250,
                         "completed-steps":0,
-                        "total-steps":10}, "comp":shallowRef(RadialProgressBar),"percentage":0}
+                        "total-steps":10}, "comp":shallowRef(RadialProgressBar),"percentage":0,"clickfunc":"clickedRadialBar"}
         var fields=ref([obj]);
         var curstep=0
         const clickedRadialBar =() =>{
@@ -55,7 +55,8 @@ export default defineComponent({
             var percentage=Math.round(curstep/10*100)
             var obj={"props":{"diameter":250,
                         "completed-steps":curstep,
-                        "total-steps":10}, "comp":shallowRef(RadialProgressBar),"percentage":percentage}
+                        "total-steps":10,
+                        }, "comp":shallowRef(RadialProgressBar),"percentage":percentage,"clickfunc":"clickedRadialBar"}
             fields.value.push(obj)
         }
         return {

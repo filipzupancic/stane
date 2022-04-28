@@ -24540,6 +24540,142 @@ module.exports = {
 
 /***/ }),
 
+/***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/components/BeautyChat.vue?vue&type=script&lang=js":
+/*!****************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/components/BeautyChat.vue?vue&type=script&lang=js ***!
+  \****************************************************************************************************************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+function _toConsumableArray(arr) { return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _unsupportedIterableToArray(arr) || _nonIterableSpread(); }
+
+function _nonIterableSpread() { throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+
+function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
+
+function _iterableToArray(iter) { if (typeof Symbol !== "undefined" && iter[Symbol.iterator] != null || iter["@@iterator"] != null) return Array.from(iter); }
+
+function _arrayWithoutHoles(arr) { if (Array.isArray(arr)) return _arrayLikeToArray(arr); }
+
+function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+  data: function data() {
+    return {
+      participants: [{
+        id: "user1",
+        name: "AI Stane",
+        imageUrl: "https://www.dropbox.com/s/6ggs6yqmcwcx4i6/stane-logo.jpeg?raw=1"
+      }],
+      // the list of all the participant of the conversation. `name` is the user name, `id` is used to establish the author of a message, `imageUrl` is supposed to be the user avatar.
+      titleImageUrl: "https://a.slack-edge.com/66f9/img/avatars-teams/ava_0001-34.png",
+      messageList: [{
+        type: "text",
+        author: "user1",
+        data: {
+          text: "\u017Divjo Aleksander, kako ti lahko pomagam?"
+        }
+      }, {
+        type: "text",
+        author: "me",
+        data: {
+          text: "\u017Divjo, potrebujem pomo\u010D pri pridobivanju ponudb za stanovanjska posojila."
+        }
+      }, {
+        type: "text",
+        author: "user1",
+        data: {
+          text: "Ni problema, tvoje zanimanje bomo posredovali izbranim bankam in v kratkem bo\u0161 dobil odgovor."
+        }
+      }],
+      // the list of the messages to show, can be paginated and adjusted dynamically
+      newMessagesCount: 0,
+      isChatOpen: false,
+      // to determine whether the chat window should be open or closed
+      showTypingIndicator: "",
+      // when set to a value matching the participant.id it shows the typing indicator for the specific user
+      colors: {
+        header: {
+          bg: "#4e8cff",
+          text: "#ffffff"
+        },
+        launcher: {
+          bg: "#4e8cff"
+        },
+        messageList: {
+          bg: "#ffffff"
+        },
+        sentMessage: {
+          bg: "#4e8cff",
+          text: "#ffffff"
+        },
+        receivedMessage: {
+          bg: "#eaeaea",
+          text: "#222222"
+        },
+        userInput: {
+          bg: "#f4f7f9",
+          text: "#565867"
+        }
+      },
+      // specifies the color scheme for the component
+      alwaysScrollToBottom: false,
+      // when set to true always scrolls the chat to the bottom when new events are in (new message, user starts typing...)
+      messageStyling: true // enables *bold* /emph/ _underline_ and such (more info at github.com/mattezza/msgdown)
+
+    };
+  },
+  methods: {
+    sendMessage: function sendMessage(text) {
+      if (text.length > 0) {
+        this.newMessagesCount = this.isChatOpen ? this.newMessagesCount : this.newMessagesCount + 1;
+        this.onMessageWasSent({
+          author: "kipo",
+          type: "text",
+          data: {
+            text: text
+          }
+        });
+      }
+    },
+    onMessageWasSent: function onMessageWasSent(message) {
+      // called when the user sends a message
+      this.messageList = [].concat(_toConsumableArray(this.messageList), [message]);
+    },
+    openChat: function openChat() {
+      // called when the user clicks on the fab button to open the chat
+      this.isChatOpen = true;
+      this.newMessagesCount = 0;
+    },
+    closeChat: function closeChat() {
+      // called when the user clicks on the botton to close the chat
+      this.isChatOpen = false;
+    },
+    handleScrollToTop: function handleScrollToTop() {// called when the user scrolls message list to top
+      // leverage pagination for loading another page of messages
+    },
+    handleOnType: function handleOnType() {
+      console.log("Emit typing event");
+    },
+    editMessage: function editMessage(message) {
+      var m = this.messageList.find(function (m) {
+        return m.id === message.id;
+      });
+      m.isEdited = true;
+      m.data.text = message.data.text;
+    }
+  },
+  setup: function setup() {
+    return {};
+  }
+});
+
+/***/ }),
+
 /***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/components/Co2.vue?vue&type=script&lang=js":
 /*!*********************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/components/Co2.vue?vue&type=script&lang=js ***!
@@ -24690,127 +24826,19 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
-function _toConsumableArray(arr) { return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _unsupportedIterableToArray(arr) || _nonIterableSpread(); }
-
-function _nonIterableSpread() { throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
-
-function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
-
-function _iterableToArray(iter) { if (typeof Symbol !== "undefined" && iter[Symbol.iterator] != null || iter["@@iterator"] != null) return Array.from(iter); }
-
-function _arrayWithoutHoles(arr) { if (Array.isArray(arr)) return _arrayLikeToArray(arr); }
-
-function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
+/* harmony import */ var _BeautyChat__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./BeautyChat */ "./resources/js/components/BeautyChat.vue");
 
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ((0,vue__WEBPACK_IMPORTED_MODULE_0__.defineComponent)({
   data: function data() {
-    return {
-      participants: [{
-        id: "user1",
-        name: "AI Stane",
-        imageUrl: "https://www.dropbox.com/s/6ggs6yqmcwcx4i6/stane-logo.jpeg?raw=1"
-      }],
-      // the list of all the participant of the conversation. `name` is the user name, `id` is used to establish the author of a message, `imageUrl` is supposed to be the user avatar.
-      titleImageUrl: "https://a.slack-edge.com/66f9/img/avatars-teams/ava_0001-34.png",
-      messageList: [{
-        type: "text",
-        author: "user1",
-        data: {
-          text: "\u017Divjo Aleksander, kako ti lahko pomagam?"
-        }
-      }, {
-        type: "text",
-        author: "me",
-        data: {
-          text: "\u017Divjo, potrebujem pomo\u010D pri pridobivanju ponudb za stanovanjska posojila."
-        }
-      }, {
-        type: "text",
-        author: "user1",
-        data: {
-          text: "Ni problema, tvoje zanimanje bomo posredovali izbranim bankam in v kratkem bo\u0161 dobil odgovor."
-        }
-      }],
-      // the list of the messages to show, can be paginated and adjusted dynamically
-      newMessagesCount: 0,
-      isChatOpen: false,
-      // to determine whether the chat window should be open or closed
-      showTypingIndicator: "",
-      // when set to a value matching the participant.id it shows the typing indicator for the specific user
-      colors: {
-        header: {
-          bg: "#4e8cff",
-          text: "#ffffff"
-        },
-        launcher: {
-          bg: "#4e8cff"
-        },
-        messageList: {
-          bg: "#ffffff"
-        },
-        sentMessage: {
-          bg: "#4e8cff",
-          text: "#ffffff"
-        },
-        receivedMessage: {
-          bg: "#eaeaea",
-          text: "#222222"
-        },
-        userInput: {
-          bg: "#f4f7f9",
-          text: "#565867"
-        }
-      },
-      // specifies the color scheme for the component
-      alwaysScrollToBottom: false,
-      // when set to true always scrolls the chat to the bottom when new events are in (new message, user starts typing...)
-      messageStyling: true // enables *bold* /emph/ _underline_ and such (more info at github.com/mattezza/msgdown)
-
-    };
+    return {};
   },
-  methods: {
-    sendMessage: function sendMessage(text) {
-      if (text.length > 0) {
-        this.newMessagesCount = this.isChatOpen ? this.newMessagesCount : this.newMessagesCount + 1;
-        this.onMessageWasSent({
-          author: "kipo",
-          type: "text",
-          data: {
-            text: text
-          }
-        });
-      }
-    },
-    onMessageWasSent: function onMessageWasSent(message) {
-      // called when the user sends a message
-      this.messageList = [].concat(_toConsumableArray(this.messageList), [message]);
-    },
-    openChat: function openChat() {
-      // called when the user clicks on the fab button to open the chat
-      this.isChatOpen = true;
-      this.newMessagesCount = 0;
-    },
-    closeChat: function closeChat() {
-      // called when the user clicks on the botton to close the chat
-      this.isChatOpen = false;
-    },
-    handleScrollToTop: function handleScrollToTop() {// called when the user scrolls message list to top
-      // leverage pagination for loading another page of messages
-    },
-    handleOnType: function handleOnType() {
-      console.log("Emit typing event");
-    },
-    editMessage: function editMessage(message) {
-      var m = this.messageList.find(function (m) {
-        return m.id === message.id;
-      });
-      m.isEdited = true;
-      m.data.text = message.data.text;
-    }
-  },
+  methods: {},
   setup: function setup() {
     return {};
+  },
+  components: {
+    'beauty-chat': _BeautyChat__WEBPACK_IMPORTED_MODULE_1__["default"]
   }
 }));
 
@@ -25577,132 +25605,52 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
-function _toConsumableArray(arr) { return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _unsupportedIterableToArray(arr) || _nonIterableSpread(); }
+/* harmony import */ var vue3_radial_progress__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! vue3-radial-progress */ "./node_modules/vue3-radial-progress/dist/RadialProgressBar.esm.js");
+/* harmony import */ var _BeautyChat__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./BeautyChat */ "./resources/js/components/BeautyChat.vue");
 
-function _nonIterableSpread() { throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
-
-function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
-
-function _iterableToArray(iter) { if (typeof Symbol !== "undefined" && iter[Symbol.iterator] != null || iter["@@iterator"] != null) return Array.from(iter); }
-
-function _arrayWithoutHoles(arr) { if (Array.isArray(arr)) return _arrayLikeToArray(arr); }
-
-function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
 
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ((0,vue__WEBPACK_IMPORTED_MODULE_0__.defineComponent)({
   data: function data() {
-    return {
-      participants: [{
-        id: "user1",
-        name: "AI Stane",
-        imageUrl: "https://www.dropbox.com/s/6ggs6yqmcwcx4i6/stane-logo.jpeg?raw=1"
-      }],
-      // the list of all the participant of the conversation. `name` is the user name, `id` is used to establish the author of a message, `imageUrl` is supposed to be the user avatar.
-      titleImageUrl: "https://a.slack-edge.com/66f9/img/avatars-teams/ava_0001-34.png",
-      messageList: [{
-        type: "text",
-        author: "user1",
-        data: {
-          text: "Hej Mojca, kako ti lahko pomagam?"
-        }
-      }, {
-        type: "text",
-        author: "me",
-        data: {
-          text: "\u017Divjo, potrebujem pomo\u010D pri pridobivanju ponudb za stanovanjska posojila."
-        }
-      }, {
-        type: "text",
-        author: "user1",
-        data: {
-          text: "Ni problema, tvoje zanimanje bomo posredovali izbranim bankam in v kratkem bo\u0161 dobila odgovor."
-        }
-      }],
-      // the list of the messages to show, can be paginated and adjusted dynamically
-      newMessagesCount: 0,
-      isChatOpen: false,
-      // to determine whether the chat window should be open or closed
-      showTypingIndicator: "",
-      // when set to a value matching the participant.id it shows the typing indicator for the specific user
-      colors: {
-        header: {
-          bg: "#4e8cff",
-          text: "#ffffff"
-        },
-        launcher: {
-          bg: "#4e8cff"
-        },
-        messageList: {
-          bg: "#ffffff"
-        },
-        sentMessage: {
-          bg: "#4e8cff",
-          text: "#ffffff"
-        },
-        receivedMessage: {
-          bg: "#eaeaea",
-          text: "#222222"
-        },
-        userInput: {
-          bg: "#f4f7f9",
-          text: "#565867"
-        }
-      },
-      // specifies the color scheme for the component
-      alwaysScrollToBottom: false,
-      // when set to true always scrolls the chat to the bottom when new events are in (new message, user starts typing...)
-      messageStyling: true,
-      // enables *bold* /emph/ _underline_ and such (more info at github.com/mattezza/msgdown)
-      percentage: 50
-    };
+    return {};
   },
-  methods: {
-    sendMessage: function sendMessage(text) {
-      if (text.length > 0) {
-        this.newMessagesCount = this.isChatOpen ? this.newMessagesCount : this.newMessagesCount + 1;
-        this.onMessageWasSent({
-          author: "kipo",
-          type: "text",
-          data: {
-            text: text
-          }
-        });
-      }
-    },
-    onMessageWasSent: function onMessageWasSent(message) {
-      // called when the user sends a message
-      this.messageList = [].concat(_toConsumableArray(this.messageList), [message]);
-    },
-    openChat: function openChat() {
-      // called when the user clicks on the fab button to open the chat
-      this.isChatOpen = true;
-      this.newMessagesCount = 0;
-    },
-    closeChat: function closeChat() {
-      // called when the user clicks on the botton to close the chat
-      this.isChatOpen = false;
-    },
-    handleScrollToTop: function handleScrollToTop() {// called when the user scrolls message list to top
-      // leverage pagination for loading another page of messages
-    },
-    handleOnType: function handleOnType() {
-      console.log("Emit typing event");
-    },
-    editMessage: function editMessage(message) {
-      var m = this.messageList.find(function (m) {
-        return m.id === message.id;
-      });
-      m.isEdited = true;
-      m.data.text = message.data.text;
-    }
+  methods: {},
+  components: {
+    "beauty-chat": _BeautyChat__WEBPACK_IMPORTED_MODULE_1__["default"]
   },
   setup: function setup() {
-    var completedSteps = (0,vue__WEBPACK_IMPORTED_MODULE_0__.ref)(0);
-    var totalSteps = (0,vue__WEBPACK_IMPORTED_MODULE_0__.ref)(10);
+    var obj = {
+      "props": {
+        "diameter": 250,
+        "completed-steps": 0,
+        "total-steps": 10
+      },
+      "comp": (0,vue__WEBPACK_IMPORTED_MODULE_0__.shallowRef)(vue3_radial_progress__WEBPACK_IMPORTED_MODULE_2__["default"]),
+      "percentage": 0,
+      "clickfunc": "clickedRadialBar"
+    };
+    var fields = (0,vue__WEBPACK_IMPORTED_MODULE_0__.ref)([obj]);
+    var curstep = 0;
+
+    var clickedRadialBar = function clickedRadialBar() {
+      curstep += 1;
+      var percentage = Math.round(curstep / 10 * 100);
+      var obj = {
+        "props": {
+          "diameter": 250,
+          "completed-steps": curstep,
+          "total-steps": 10
+        },
+        "comp": (0,vue__WEBPACK_IMPORTED_MODULE_0__.shallowRef)(vue3_radial_progress__WEBPACK_IMPORTED_MODULE_2__["default"]),
+        "percentage": percentage,
+        "clickfunc": "clickedRadialBar"
+      };
+      fields.value.push(obj);
+    };
+
     return {
-      completedSteps: completedSteps,
-      totalSteps: totalSteps
+      clickedRadialBar: clickedRadialBar,
+      fields: fields
     };
   }
 }));
@@ -25851,6 +25799,56 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
 
 /***/ }),
 
+/***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/components/BeautyChat.vue?vue&type=template&id=32370c9f":
+/*!********************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/components/BeautyChat.vue?vue&type=template&id=32370c9f ***!
+  \********************************************************************************************************************************************************************************************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "render": () => (/* binding */ render)
+/* harmony export */ });
+/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
+
+var _hoisted_1 = {
+  "class": "bg-white"
+};
+function render(_ctx, _cache, $props, $setup, $data, $options) {
+  var _component_beautiful_chat = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("beautiful-chat");
+
+  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_1, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_beautiful_chat, {
+    participants: $data.participants,
+    titleImageUrl: $data.titleImageUrl,
+    onMessageWasSent: $options.onMessageWasSent,
+    messageList: $data.messageList,
+    newMessagesCount: $data.newMessagesCount,
+    isOpen: $data.isChatOpen,
+    close: $options.closeChat,
+    icons: _ctx.icons,
+    open: $options.openChat,
+    showEmoji: true,
+    showFile: true,
+    showEdition: true,
+    showDeletion: true,
+    deletionConfirmation: true,
+    showTypingIndicator: $data.showTypingIndicator,
+    showLauncher: true,
+    showCloseButton: true,
+    colors: $data.colors,
+    alwaysScrollToBottom: $data.alwaysScrollToBottom,
+    disableUserListToggle: false,
+    messageStyling: $data.messageStyling,
+    onOnType: $options.handleOnType,
+    onEdit: $options.editMessage
+  }, null, 8
+  /* PROPS */
+  , ["participants", "titleImageUrl", "onMessageWasSent", "messageList", "newMessagesCount", "isOpen", "close", "icons", "open", "showTypingIndicator", "colors", "alwaysScrollToBottom", "messageStyling", "onOnType", "onEdit"])]);
+}
+
+/***/ }),
+
 /***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/components/Co2.vue?vue&type=template&id=4b16062b":
 /*!*************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/components/Co2.vue?vue&type=template&id=4b16062b ***!
@@ -25941,35 +25939,9 @@ var _hoisted_1 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementV
 );
 
 function render(_ctx, _cache, $props, $setup, $data, $options) {
-  var _component_beautiful_chat = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("beautiful-chat");
+  var _component_beauty_chat = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("beauty-chat");
 
-  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", null, [_hoisted_1, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_beautiful_chat, {
-    participants: _ctx.participants,
-    titleImageUrl: _ctx.titleImageUrl,
-    onMessageWasSent: _ctx.onMessageWasSent,
-    messageList: _ctx.messageList,
-    newMessagesCount: _ctx.newMessagesCount,
-    isOpen: _ctx.isChatOpen,
-    close: _ctx.closeChat,
-    icons: _ctx.icons,
-    open: _ctx.openChat,
-    showEmoji: true,
-    showFile: true,
-    showEdition: true,
-    showDeletion: true,
-    deletionConfirmation: true,
-    showTypingIndicator: _ctx.showTypingIndicator,
-    showLauncher: true,
-    showCloseButton: true,
-    colors: _ctx.colors,
-    alwaysScrollToBottom: _ctx.alwaysScrollToBottom,
-    disableUserListToggle: false,
-    messageStyling: _ctx.messageStyling,
-    onOnType: _ctx.handleOnType,
-    onEdit: _ctx.editMessage
-  }, null, 8
-  /* PROPS */
-  , ["participants", "titleImageUrl", "onMessageWasSent", "messageList", "newMessagesCount", "isOpen", "close", "icons", "open", "showTypingIndicator", "colors", "alwaysScrollToBottom", "messageStyling", "onOnType", "onEdit"])]);
+  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", null, [_hoisted_1, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_beauty_chat)]);
 }
 
 /***/ }),
@@ -26470,57 +26442,35 @@ var _hoisted_4 = /*#__PURE__*/_withScopeId(function () {
   );
 });
 
-var _hoisted_5 = {
-  "class": "pt-8"
-};
+var _hoisted_5 = ["onClick"];
 var _hoisted_6 = {
   "class": "mt-1 text-4xl font-extrabold text-gray-900 sm:text-5xl sm:tracking-tight lg:text-6xl"
 };
 function render(_ctx, _cache, $props, $setup, $data, $options) {
-  var _component_radial_progress_bar = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("radial-progress-bar");
+  var _component_beauty_chat = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("beauty-chat");
 
-  var _component_beautiful_chat = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("beautiful-chat");
+  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_1, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_2, [_hoisted_3, _hoisted_4, ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderList)(_ctx.fields, function (component, index) {
+    return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", {
+      key: index,
+      onClick: component.clickfunc,
+      "class": "pt-8"
+    }, [((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)((0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveDynamicComponent)(component.comp), (0,vue__WEBPACK_IMPORTED_MODULE_0__.normalizeProps)((0,vue__WEBPACK_IMPORTED_MODULE_0__.guardReactiveProps)(component.props)), {
+      "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
+        return [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", _hoisted_6, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(component.percentage) + "% ", 1
+        /* TEXT */
+        )];
+      }),
+      _: 2
+      /* DYNAMIC */
 
-  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_1, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_2, [_hoisted_3, _hoisted_4, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_5, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_radial_progress_bar, {
-    diameter: 250,
-    "completed-steps": 5,
-    "total-steps": 10
-  }, {
-    "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
-      return [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", _hoisted_6, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.percentage) + "% ", 1
-      /* TEXT */
-      )];
-    }),
-    _: 1
-    /* STABLE */
-
-  })])])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_beautiful_chat, {
-    participants: _ctx.participants,
-    titleImageUrl: _ctx.titleImageUrl,
-    onMessageWasSent: _ctx.onMessageWasSent,
-    messageList: _ctx.messageList,
-    newMessagesCount: _ctx.newMessagesCount,
-    isOpen: _ctx.isChatOpen,
-    close: _ctx.closeChat,
-    icons: _ctx.icons,
-    open: _ctx.openChat,
-    showEmoji: true,
-    showFile: true,
-    showEdition: true,
-    showDeletion: true,
-    deletionConfirmation: true,
-    showTypingIndicator: _ctx.showTypingIndicator,
-    showLauncher: true,
-    showCloseButton: true,
-    colors: _ctx.colors,
-    alwaysScrollToBottom: _ctx.alwaysScrollToBottom,
-    disableUserListToggle: false,
-    messageStyling: _ctx.messageStyling,
-    onOnType: _ctx.handleOnType,
-    onEdit: _ctx.editMessage
-  }, null, 8
-  /* PROPS */
-  , ["participants", "titleImageUrl", "onMessageWasSent", "messageList", "newMessagesCount", "isOpen", "close", "icons", "open", "showTypingIndicator", "colors", "alwaysScrollToBottom", "messageStyling", "onOnType", "onEdit"])]);
+    }, 1040
+    /* FULL_PROPS, DYNAMIC_SLOTS */
+    ))], 8
+    /* PROPS */
+    , _hoisted_5);
+  }), 128
+  /* KEYED_FRAGMENT */
+  ))])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_beauty_chat)]);
 }
 
 /***/ }),
@@ -45871,6 +45821,34 @@ exports["default"] = (sfc, props) => {
 
 /***/ }),
 
+/***/ "./resources/js/components/BeautyChat.vue":
+/*!************************************************!*\
+  !*** ./resources/js/components/BeautyChat.vue ***!
+  \************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _BeautyChat_vue_vue_type_template_id_32370c9f__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./BeautyChat.vue?vue&type=template&id=32370c9f */ "./resources/js/components/BeautyChat.vue?vue&type=template&id=32370c9f");
+/* harmony import */ var _BeautyChat_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./BeautyChat.vue?vue&type=script&lang=js */ "./resources/js/components/BeautyChat.vue?vue&type=script&lang=js");
+/* harmony import */ var _var_www_html_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./node_modules/vue-loader/dist/exportHelper.js */ "./node_modules/vue-loader/dist/exportHelper.js");
+
+
+
+
+;
+const __exports__ = /*#__PURE__*/(0,_var_www_html_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__["default"])(_BeautyChat_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__["default"], [['render',_BeautyChat_vue_vue_type_template_id_32370c9f__WEBPACK_IMPORTED_MODULE_0__.render],['__file',"resources/js/components/BeautyChat.vue"]])
+/* hot reload */
+if (false) {}
+
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__exports__);
+
+/***/ }),
+
 /***/ "./resources/js/components/Co2.vue":
 /*!*****************************************!*\
   !*** ./resources/js/components/Co2.vue ***!
@@ -46157,6 +46135,22 @@ if (false) {}
 
 /***/ }),
 
+/***/ "./resources/js/components/BeautyChat.vue?vue&type=script&lang=js":
+/*!************************************************************************!*\
+  !*** ./resources/js/components/BeautyChat.vue?vue&type=script&lang=js ***!
+  \************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* reexport safe */ _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_BeautyChat_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_0__["default"])
+/* harmony export */ });
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_BeautyChat_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!../../../node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./BeautyChat.vue?vue&type=script&lang=js */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/components/BeautyChat.vue?vue&type=script&lang=js");
+ 
+
+/***/ }),
+
 /***/ "./resources/js/components/Co2.vue?vue&type=script&lang=js":
 /*!*****************************************************************!*\
   !*** ./resources/js/components/Co2.vue?vue&type=script&lang=js ***!
@@ -46314,6 +46308,22 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_EditDocument_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!../../../../node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./EditDocument.vue?vue&type=script&lang=js */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/components/documents/EditDocument.vue?vue&type=script&lang=js");
  
+
+/***/ }),
+
+/***/ "./resources/js/components/BeautyChat.vue?vue&type=template&id=32370c9f":
+/*!******************************************************************************!*\
+  !*** ./resources/js/components/BeautyChat.vue?vue&type=template&id=32370c9f ***!
+  \******************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "render": () => (/* reexport safe */ _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_templateLoader_js_ruleSet_1_rules_2_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_BeautyChat_vue_vue_type_template_id_32370c9f__WEBPACK_IMPORTED_MODULE_0__.render)
+/* harmony export */ });
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_templateLoader_js_ruleSet_1_rules_2_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_BeautyChat_vue_vue_type_template_id_32370c9f__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!../../../node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!../../../node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./BeautyChat.vue?vue&type=template&id=32370c9f */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/components/BeautyChat.vue?vue&type=template&id=32370c9f");
+
 
 /***/ }),
 
