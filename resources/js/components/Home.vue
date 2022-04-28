@@ -65,8 +65,7 @@
             </a>
           </h3>
           <p class="mt-2 text-sm text-gray-500">
-            Doloribus dolores nostrum quia qui natus officia quod et dolorem.
-            Sit repellendus qui ut at blanditiis et quo et molestiae.
+            {{ action.content }}
           </p>
         </div>
         <span
@@ -132,11 +131,13 @@ import {
   ReceiptRefundIcon,
   UsersIcon,
   GlobeIcon,
+  DocumentTextIcon,
 } from "@heroicons/vue/outline";
 
 const actions = [
   {
-    title: "Hitro in enostavno do kredita.",
+    title: "Hitro in preprosto do kredita.",
+    content: "Stane te pelje čez celoten proces pridobivanja stanovanjskega posojila, od izračuna kreditne sposobnosti in pridobivanja najboljše obrestne mere, do podpisa pogodbe.",
     href: "/kredit",
     icon: ClockIcon,
     iconForeground: "text-teal-700",
@@ -144,13 +145,15 @@ const actions = [
   },
   {
     title: "Stroški pod nadzorom.",
+    content: "Beleženje porabe, uporabni nasveti za znižanje in avtomatizirano plačevanje preko aplikacije. Optimiziraj svojo porabo, brez da za to porabiš nekaj ur na teden.",
     href: "/stroski",
-    icon: ReceiptRefundIcon,
+    icon: CashIcon,
     iconForeground: "text-rose-700",
     iconBackground: "bg-rose-50",
   },
   {
-    title: "Doseži svoje cilje za prihodnost.",
+    title: "Investiraj v prihodnost.",
+    content: "Uresniči svoje sanje s pametnimi naložbami.",
     href: "/nalozbe",
     icon: BadgeCheckIcon,
     iconForeground: "text-purple-700",
@@ -158,6 +161,7 @@ const actions = [
   },
   {
     title: "Eko se splača.",
+    content: "Skrb za naš planet ni več zgolj dobrodelnost, ampak se dejansko splača. Stane ti pomaga razumeti tvoj ogljični odtis in svetuje, kako ga lahko zmanjšaš in hkrati prihraniš.",
     href: "/eko",
     icon: GlobeIcon,
     iconForeground: "text-emerald-700",
@@ -165,13 +169,15 @@ const actions = [
   },
   {
     title: "Dokumenti in računi na enem mestu.",
+    content: "Stane je prav tako digitalna denarnica za račune in dokumente. Skeniraj, naloži in bodi brez skrbi, da bi kaj založil ali izgubil.",
     href: "/dokumenti",
-    icon: GlobeIcon,
-    iconForeground: "text-emerald-700",
-    iconBackground: "bg-emerald-50",
+    icon: DocumentTextIcon,
+    iconForeground: "text-yellow-700",
+    iconBackground: "bg-yellow-50",
   },
   {
     title: "Osebni svetovalec vedno pri roki",
+    content: "Stane je vedno na voljo za vprašanja na temo financ, lahko pa te tudi hitro poveže z bančnih uslužbencem.",
     href: "/obvestila",
     icon: UsersIcon,
     iconForeground: "text-sky-700",
