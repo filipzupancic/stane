@@ -27,7 +27,7 @@
                     <div class="flex space-x-8">
                         <div class="flex">
                             <a href="/dokumenti" class="-m-2 p-2">
-                                <button type="button" class="bg-white p-1 rounded-full text-gray-900 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+                                <button type="button" class="bg-white p-1 rounded-full text-gray-900 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">
                                     <span class="sr-only">Dokumenti</span>
                                     <!-- Heroicon name: outline/search -->
                                     <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -39,7 +39,7 @@
 
                         <div class="flex">
                             <a href="/obvestila" class="-m-2 p-2">
-                                <button type="button" class="bg-white p-1 rounded-full text-gray-900 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+                                <button type="button" class="bg-white p-1 rounded-full text-gray-900 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">
                                     <span class="sr-only">Obvestila</span>
                                     <!-- Heroicon name: outline/bell -->
                                     <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">

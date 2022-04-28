@@ -1,16 +1,35 @@
 <template>
-  <div>
-    <div class="max-w-7xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:px-8">
-      <div class="text-center radial-progress">
-        <p class="mt-1 text-4xl font-extrabold text-gray-900 sm:text-5xl sm:tracking-tight lg:text-6xl">
-          Hej, Kipo
-        </p>
-        <p class="max-w-xl mt-5 mx-auto text-xl text-gray-500">
-          Tvoj uporabniški profil.
-        </p>
-      </div>
-    </div>
-    <beautiful-chat
+    <div class="bg-white">
+        <div>
+            <div
+                class="max-w-7xl mx-auto text-center py-12 px-4 sm:px-6 lg:py-16 lg:px-8"
+            >
+                <h2
+                    class="text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl"
+                >
+                    <span class="block">Znižaj svoje stroške</span>
+                </h2>
+                <div class="mt-8 flex justify-center">
+                    <div class="inline-flex rounded-md shadow">
+                        <a
+                            href="/stroski"
+                            class="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-emerald-600 hover:bg-emerald-700"
+                        >
+                            Spremljaj porabo
+                        </a>
+                    </div>
+                    <div class="ml-3 inline-flex">
+                        <a
+                            href="/manjsi-stroski"
+                            class="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-emerald-700 bg-emerald-100 hover:bg-emerald-200"
+                        >
+                            Znižaj stroške
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <beautiful-chat
             :participants="participants"
             :titleImageUrl="titleImageUrl"
             :onMessageWasSent="onMessageWasSent"
@@ -35,7 +54,7 @@
             @onType="handleOnType"
             @edit="editMessage"
         />
-  </div>
+    </div>
 </template>
 
 <script>
@@ -59,7 +78,7 @@ export default defineComponent({
                     type: "text",
                     author: `user1`,
                     data: {
-                        text: `Živjo Kipo, kako ti lahko pomagam?`,
+                        text: `Živjo Urška, kako ti lahko pomagam?`,
                     },
                 },
                 {
@@ -148,7 +167,9 @@ export default defineComponent({
         },
     },
     setup() {
-        return {}
+        return {};
     },
 });
 </script>
+
+<style scoped></style>

@@ -2,7 +2,9 @@ import { createRouter, createWebHistory } from "vue-router";
 import Welcome from '../components/Welcome'
 import Home from '../components/Home'
 import Costs from '../components/Costs'
+import Costs2Action from '../components/Costs2Action'
 import Co2 from '../components/Co2'
+import Co2Action from '../components/Co2Action'
 import Investments from '../components/Investments'
 import Dashboard from '../components/Dashboard'
 import Notifications from '../components/Notifications'
@@ -28,9 +30,19 @@ const routes = [
         component: Costs
     },
     {
+        path: '/nizji-stroski',
+        name: 'costs2action',
+        component: Costs2Action
+    },
+    {
         path: '/eko',
         name: 'co2',
         component: Co2
+    },
+    {
+        path: '/eko-akcija',
+        name: 'co2action',
+        component: Co2Action
     },
     {
         path: '/nalozbe',
@@ -53,8 +65,8 @@ const routes = [
         component: Dashboard
     },
     {
-        path: '/documents/add',
-        name: 'documents.add',
+        path: '/documents/create',
+        name: 'documents.create',
         component: AddDocument
     },
     {
