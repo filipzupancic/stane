@@ -46,7 +46,7 @@
                                     class="text-gray-900 font-medium hover:text-gray-600"
                                     >{{ item.name }}</a
                                 >
-                                <p class="text-gray-500">Added: 28/04/2022</p>
+                                <p class="text-gray-500">Added: May 2022</p>
                             </div>
                             <div class="flex-shrink-0 pr-2">
                                 <button

@@ -78,7 +78,7 @@ export default defineComponent({
                     type: "text",
                     author: `user1`,
                     data: {
-                        text: `Živjo Urška, kako ti lahko pomagam?`,
+                        text: `Živjo Kipo, kako ti lahko pomagam?`,
                     },
                 },
                 {
