@@ -7,7 +7,7 @@ module.exports = {
         './resources/views/**/*.blade.php',
         './resources/js/**/*.{vue,js,ts,jsx,tsx}',
     ],
-
+    darkMode: 'class',
     theme: {
         extend: {
             fontFamily: {
@@ -15,7 +15,9 @@ module.exports = {
             },
         },
     },
+
     plugins: [
         require('@tailwindcss/forms'),
+        require('flowbite/plugin'),
     ],
 };
