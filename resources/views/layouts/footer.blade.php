@@ -12,7 +12,7 @@
                 <a href="/eko" class="text-base text-blue-500 hover:text-gray-900"> EKO </a>
             </div>
             <div class="px-4 py-2">
-                <a href="/nalozbe" class="text-base text-blue-500 hover:text-blue-500"> NALOŽBE </a>
+                <a href="/nalozbe" class="text-base text-blue-500 hover:text-gray-900"> NALOŽBE </a>
             </div>
         </nav>
         <div class="mt-8 flex justify-center space-x-6">

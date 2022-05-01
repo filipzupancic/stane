@@ -19,6 +19,9 @@
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
     <script defer src="https://unpkg.com/alpinejs@3.7.1/dist/cdn.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+
 </head>
 @if (Auth::check())
 <meta name="user_id" content="{{ Auth::user()->id }}" />

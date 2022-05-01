@@ -11,12 +11,13 @@
                     Vzemi kredit.
                 </p>
 
-                <div v-for="(component, index) in fields" :key="index" v-on:click="component.clickfunc" class="pt-8">
-                    <component :is="component.comp" v-bind="component.props" >
+                <div v-for="(component, index) in fields" :key="index"  class="pt-8">
+                    <component :is="component.comp" v-bind="component.props" v-on:click="clickedRadialBar(index)" >
                                                 <p
                             class="mt-1 text-4xl font-extrabold text-gray-900 sm:text-5xl sm:tracking-tight lg:text-6xl"
                         >
                             {{component.percentage}}%
+                       
                         </p>     
                          </component>
                 </div>
@@ -47,16 +48,17 @@ export default defineComponent({
 
         var obj={"props":{"diameter":250,
                         "completed-steps":0,
-                        "total-steps":10}, "comp":shallowRef(RadialProgressBar),"percentage":0,"clickfunc":"clickedRadialBar"}
+                        "total-steps":10}, "comp":shallowRef(RadialProgressBar),"percentage":0}
         var fields=ref([obj]);
         var curstep=0
-        const clickedRadialBar =() =>{
-            curstep+=1
+        const clickedRadialBar =(x) =>{
+            curstep=x;
+            console.log(x)
             var percentage=Math.round(curstep/10*100)
             var obj={"props":{"diameter":250,
                         "completed-steps":curstep,
                         "total-steps":10,
-                        }, "comp":shallowRef(RadialProgressBar),"percentage":percentage,"clickfunc":"clickedRadialBar"}
+                        }, "comp":shallowRef(RadialProgressBar),"percentage":percentage}
             fields.value.push(obj)
         }
         return {

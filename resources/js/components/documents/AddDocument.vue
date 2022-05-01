@@ -7,10 +7,18 @@
   </div>
 </div>
 
+<div class="bg-white">
+  <div class="max-w-7xl mx-auto text-center py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
+    <h2 class="text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+      <span class="block">Dodaj nov dokument v svojo denarnico</span>
+    </h2>
+  </div>
+</div>
+<div class="px-8">
     <form class="space-y-6" @submit.prevent="saveDocument">
         <div class="space-y-4 rounded-md shadow-sm">
             <div>
-                <label for="name" class="block text-sm font-medium text-gray-700">Name</label>
+                <label for="name" class="block text-sm font-medium text-gray-700">Ime</label>
                 <div class="mt-1">
                     <input type="text" name="name" id="name"
                            class="block mt-1 w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
@@ -25,6 +33,7 @@
             Add document
         </button>
     </form>
+</div>
 </template>
 
 <script>

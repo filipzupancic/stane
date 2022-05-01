@@ -23,7 +23,7 @@ export default function useDocuments() {
         errors.value = ''
         try {
             await axios.post('/api/documents', data)
-            await router.push({ name: 'dashboard' })
+            await router.push({ name: 'documents' })
         } catch (e) {
             if (e.response.status === 422) {
                 for (const key in e.response.data.errors) {
@@ -38,7 +38,7 @@ export default function useDocuments() {
         errors.value = ''
         try {
             await axios.patch('/api/documents/' + id, document.value)
-            await router.push({ name: 'documents.index' })
+            await router.push({ name: 'documents' })
         } catch (e) {
             if (e.response.status === 422) {
                 for (const key in e.response.data.errors) {
