@@ -38,7 +38,8 @@
                         </dd>
                     </template>
                     <template v-slot:back align-items="center" justify-content="center">
-                        <p class="text-2xl font-semibold text-gray-900">10 požaganih dreves</p>
+                        <p class="text-2xl font-semibold text-gray-900">Organizacije:
+                        </p>
                     </template>
                 </vue-flip>
                 <vue-flip active-click="" class="relative bg-white py-5 px-4 sm:pt-6 sm:px-6 shadow rounded-lg overflow-hidden center">
@@ -51,39 +52,7 @@
                 </vue-flip>
                 <vue-flip active-click="" class="relative bg-white py-5 px-4 sm:pt-6 sm:px-6 shadow rounded-lg overflow-hidden center">
                     <template v-slot:front align-items="center" justify-content="center">
-                       Doniraj
-                    </template>
-                    <template v-slot:back align-items="center" justify-content="center">
-                        Opcije doniranja
-                    </template>
-                </vue-flip>
-                <vue-flip active-click="" class="relative bg-white py-5 px-4 sm:pt-6 sm:px-6 shadow rounded-lg overflow-hidden center">
-                    <template v-slot:front align-items="center" justify-content="center">
-                       Doniraj
-                    </template>
-                    <template v-slot:back align-items="center" justify-content="center">
-                        Opcije doniranja
-                    </template>
-                </vue-flip>
-                 <vue-flip active-click="" class="relative bg-white py-5 px-4 sm:pt-6 sm:px-6 shadow rounded-lg overflow-hidden center">
-                    <template v-slot:front align-items="center" justify-content="center">
-                       Doniraj
-                    </template>
-                    <template v-slot:back align-items="center" justify-content="center">
-                        Opcije doniranja
-                    </template>
-                </vue-flip>
-                 <vue-flip active-click="" class="relative bg-white py-5 px-4 sm:pt-6 sm:px-6 shadow rounded-lg overflow-hidden center">
-                    <template v-slot:front align-items="center" justify-content="center">
-                       Doniraj
-                    </template>
-                    <template v-slot:back align-items="center" justify-content="center">
-                        Opcije doniranja
-                    </template>
-                </vue-flip>
-                 <vue-flip active-click="" class="relative bg-white py-5 px-4 sm:pt-6 sm:px-6 shadow rounded-lg overflow-hidden center">
-                    <template v-slot:front align-items="center" justify-content="center">
-                       Doniraj
+                       Doniraj2
                     </template>
                     <template v-slot:back align-items="center" justify-content="center">
                         Opcije doniranja
