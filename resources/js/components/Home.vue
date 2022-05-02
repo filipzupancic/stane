@@ -136,7 +136,7 @@ import {
 
 const actions = [
   {
-    title: "Hitro in preprosto do kredita.",
+    title: "Hitro in ugodno do kredita.",
     content: "Stane te pelje čez celoten proces pridobivanja stanovanjskega posojila, od izračuna kreditne sposobnosti in pridobivanja najboljše obrestne mere, do podpisa pogodbe.",
     href: "/kredit",
     icon: ClockIcon,
@@ -168,8 +168,8 @@ const actions = [
     iconBackground: "bg-emerald-50",
   },
   {
-    title: "Dokumenti in računi na enem mestu.",
-    content: "Stane je prav tako digitalna denarnica za račune in dokumente. Skeniraj, naloži in bodi brez skrbi, da bi kaj založil ali izgubil.",
+    title: "Računi in dokumenti na enem mestu.",
+    content: "Stane ti omogoča, da preprosto povežeš vse bančne račune in digitalno denarnico na enem mestu.",
     href: "/dokumenti",
     icon: DocumentTextIcon,
     iconForeground: "text-yellow-700",

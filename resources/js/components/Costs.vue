@@ -9,24 +9,6 @@
                 >
                     <span class="block">Tvoji stroški</span>
                 </h2>
-                <div class="mt-8 flex justify-center">
-                    <div class="inline-flex rounded-md shadow">
-                        <a
-                            href="/stroski"
-                            class="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700"
-                        >
-                            Spremljaj porabo
-                        </a>
-                    </div>
-                    <div class="ml-3 inline-flex">
-                        <a
-                            href="/nizji-stroski"
-                            class="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-blue-700 bg-blue-100 hover:bg-blue-200"
-                        >
-                            Znižaj stroške
-                        </a>
-                    </div>
-                </div>
             </div>
         </div>
         <!-- Actions panel -->
