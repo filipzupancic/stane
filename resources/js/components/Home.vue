@@ -168,9 +168,9 @@ const actions = [
     iconBackground: "bg-emerald-50",
   },
   {
-    title: "Računi in dokumenti na enem mestu.",
+    title: "Digitalna denarnica.",
     content: "Stane ti omogoča, da preprosto povežeš vse bančne račune in digitalno denarnico na enem mestu.",
-    href: "/dokumenti",
+    href: "/denarnica",
     icon: DocumentTextIcon,
     iconForeground: "text-yellow-700",
     iconBackground: "bg-yellow-50",

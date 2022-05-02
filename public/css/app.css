@@ -1187,6 +1187,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 }.text-green-600 {
   --tw-text-opacity: 1;
   color: rgb(5 122 85 / var(--tw-text-opacity));
+}.text-emerald-500 {
+  --tw-text-opacity: 1;
+  color: rgb(16 185 129 / var(--tw-text-opacity));
 }.text-gray-900 {
   --tw-text-opacity: 1;
   color: rgb(17 24 39 / var(--tw-text-opacity));
@@ -1362,6 +1365,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 }.hover\:text-gray-900:hover {
   --tw-text-opacity: 1;
   color: rgb(17 24 39 / var(--tw-text-opacity));
+}.hover\:text-emerald-500:hover {
+  --tw-text-opacity: 1;
+  color: rgb(16 185 129 / var(--tw-text-opacity));
 }.hover\:text-gray-800:hover {
   --tw-text-opacity: 1;
   color: rgb(31 41 55 / var(--tw-text-opacity));
@@ -1534,8 +1540,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   }.sm\:tracking-tight {
     letter-spacing: -0.025em;
   }
-}@media (min-width: 1024px) {.lg\:col-span-7 {
+}@media (min-width: 1024px) {.lg\:col-span-5 {
+    grid-column: span 5 / span 5;
+  }.lg\:col-span-7 {
     grid-column: span 7 / span 7;
+  }.lg\:col-start-6 {
+    grid-column-start: 6;
   }.lg\:col-start-8 {
     grid-column-start: 8;
   }.lg\:col-end-13 {
@@ -1584,8 +1594,12 @@ Ensure the default browser behavior of the `hidden` attribute.
     top: auto;
   }.xl\:right-auto {
     right: auto;
+  }.xl\:col-span-6 {
+    grid-column: span 6 / span 6;
   }.xl\:col-span-8 {
     grid-column: span 8 / span 8;
+  }.xl\:col-start-7 {
+    grid-column-start: 7;
   }.xl\:col-start-9 {
     grid-column-start: 9;
   }.xl\:mt-0 {

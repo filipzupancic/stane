@@ -1,9 +1,9 @@
 <!-- This example requires Tailwind CSS v2.0+ -->
 <template>
   <div class="py-8 px-4">
-    <h2 class="text-lg font-semibold text-gray-900">Stroški, naročnine, sestanki na enem mestu.</h2>
+    <h2 class="text-lg font-semibold text-gray-900">Stroški, naročnine, opomini na enem mestu.</h2>
     <div class="lg:grid lg:grid-cols-12 lg:gap-x-16">
-      <div class="mt-10 text-center lg:col-start-8 lg:col-end-13 lg:row-start-1 lg:mt-9 xl:col-start-9">
+      <div class="mt-10 text-center lg:col-start-6 lg:col-end-13 lg:row-start-1 lg:mt-9 xl:col-start-7">
         <div class="flex items-center text-gray-900">
           <button type="button" class="-m-1.5 flex flex-none items-center justify-center p-1.5 text-gray-400 hover:text-gray-500">
             <span class="sr-only">Prejšnji mesec</span>
@@ -31,7 +31,7 @@
         </div>
         <button type="button" class="focus:outline-none mt-8 w-full rounded-md border border-transparent bg-blue-600 py-2 px-4 text-sm font-medium text-white shadow hover:bg-blue-700 focus:ring-2 focus:ring-blue-500 focus:ring-offset-2">Dodaj dogodek</button>
       </div>
-      <ol class="mt-4 divide-y divide-gray-100 text-sm leading-6 lg:col-span-7 xl:col-span-8">
+      <ol class="mt-4 divide-y divide-gray-100 text-sm leading-6 lg:col-span-5 xl:col-span-6">
         <li v-for="meeting in meetings" :key="meeting.id" class="relative flex space-x-6 py-6 xl:static">
           <img :src="meeting.imageUrl" alt="" class="h-14 w-14 flex-none rounded-full" />
           <div class="flex-auto">
@@ -49,7 +49,7 @@
               <div class="mt-2 flex items-start space-x-3 xl:mt-0 xl:ml-3.5 xl:border-l xl:border-gray-400 xl:border-opacity-50 xl:pl-3.5">
                 <dt class="mt-0.5">
                   <span class="sr-only">Zadeva</span>
-                  <LocationMarkerIcon class="h-5 w-5 text-gray-400" aria-hidden="true" />
+                  <CheckCircleIcon class="h-5 w-5 text-gray-400" aria-hidden="true" />
                 </dt>
                 <dd>{{ meeting.location }}</dd>
               </div>
@@ -58,7 +58,7 @@
           <Menu as="div" class="absolute top-6 right-0 xl:relative xl:top-auto xl:right-auto xl:self-center">
             <div>
               <MenuButton class="-m-2 flex items-center rounded-full p-2 text-gray-500 hover:text-gray-600">
-                <span class="sr-only">Open options</span>
+                <span class="sr-only">Odpri možnosti</span>
                 <DotsHorizontalIcon class="h-5 w-5" aria-hidden="true" />
               </MenuButton>
             </div>
@@ -67,10 +67,10 @@
               <MenuItems class="focus:outline-none absolute right-0 z-10 mt-2 w-36 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5">
                 <div class="py-1">
                   <MenuItem v-slot="{ active }">
-                    <a href="#" :class="[active ? 'bg-gray-100 text-gray-900' : 'text-gray-700', 'block px-4 py-2 text-sm']">Edit</a>
+                    <a href="#" :class="[active ? 'bg-gray-100 text-gray-900' : 'text-gray-700', 'block px-4 py-2 text-sm']">Uredi</a>
                   </MenuItem>
                   <MenuItem v-slot="{ active }">
-                    <a href="#" :class="[active ? 'bg-gray-100 text-gray-900' : 'text-gray-700', 'block px-4 py-2 text-sm']">Cancel</a>
+                    <a href="#" :class="[active ? 'bg-gray-100 text-gray-900' : 'text-gray-700', 'block px-4 py-2 text-sm']">Odstrani</a>
                   </MenuItem>
                 </div>
               </MenuItems>
@@ -89,19 +89,20 @@ import {
   ChevronRightIcon,
   DotsHorizontalIcon,
   LocationMarkerIcon,
+  CheckCircleIcon,
 } from '@heroicons/vue/solid'
 import { Menu, MenuButton, MenuItem, MenuItems } from '@headlessui/vue'
 
 const meetings = [
   {
     id: 1,
-    date: 'January 10th, 2022',
-    time: '5:00 PM',
-    datetime: '2022-01-10T17:00',
-    name: 'Leslie Alexander',
+    date: '10. junij 2022',
+    time: '',
+    datetime: '',
+    name: 'Obrok stanovanjskega posojila',
     imageUrl:
-      'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
-    location: 'Starbucks',
+      'https://www.dropbox.com/s/l2trkicqi2dcbni/Sparkasse.svg.png?raw=1',
+    location: 'Sparkasse Banka d.d.',
   },
   // More meetings...
 ]
@@ -161,6 +162,7 @@ export default {
     ChevronRightIcon,
     DotsHorizontalIcon,
     LocationMarkerIcon,
+    CheckCircleIcon,
   },
   setup() {
     return {

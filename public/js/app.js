@@ -24582,17 +24582,18 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _heroicons_vue_solid__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @heroicons/vue/solid */ "./node_modules/@heroicons/vue/solid/esm/ChevronRightIcon.js");
 /* harmony import */ var _heroicons_vue_solid__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @heroicons/vue/solid */ "./node_modules/@heroicons/vue/solid/esm/DotsHorizontalIcon.js");
 /* harmony import */ var _heroicons_vue_solid__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @heroicons/vue/solid */ "./node_modules/@heroicons/vue/solid/esm/LocationMarkerIcon.js");
+/* harmony import */ var _heroicons_vue_solid__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @heroicons/vue/solid */ "./node_modules/@heroicons/vue/solid/esm/CheckCircleIcon.js");
 /* harmony import */ var _headlessui_vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @headlessui/vue */ "./node_modules/@headlessui/vue/dist/components/menu/menu.js");
 
 
 var meetings = [{
   id: 1,
-  date: 'January 10th, 2022',
-  time: '5:00 PM',
-  datetime: '2022-01-10T17:00',
-  name: 'Leslie Alexander',
-  imageUrl: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
-  location: 'Starbucks'
+  date: '10. junij 2022',
+  time: '',
+  datetime: '',
+  name: 'Obrok stanovanjskega posojila',
+  imageUrl: 'https://www.dropbox.com/s/l2trkicqi2dcbni/Sparkasse.svg.png?raw=1',
+  location: 'Sparkasse Banka d.d.'
 } // More meetings...
 ];
 var days = [{
@@ -24723,7 +24724,8 @@ var days = [{
     ChevronLeftIcon: _heroicons_vue_solid__WEBPACK_IMPORTED_MODULE_2__["default"],
     ChevronRightIcon: _heroicons_vue_solid__WEBPACK_IMPORTED_MODULE_3__["default"],
     DotsHorizontalIcon: _heroicons_vue_solid__WEBPACK_IMPORTED_MODULE_4__["default"],
-    LocationMarkerIcon: _heroicons_vue_solid__WEBPACK_IMPORTED_MODULE_5__["default"]
+    LocationMarkerIcon: _heroicons_vue_solid__WEBPACK_IMPORTED_MODULE_5__["default"],
+    CheckCircleIcon: _heroicons_vue_solid__WEBPACK_IMPORTED_MODULE_6__["default"]
   },
   setup: function setup() {
     return {
@@ -25903,9 +25905,9 @@ var actions = [{
   iconForeground: "text-emerald-700",
   iconBackground: "bg-emerald-50"
 }, {
-  title: "Računi in dokumenti na enem mestu.",
+  title: "Digitalna denarnica.",
   content: "Stane ti omogoča, da preprosto povežeš vse bančne račune in digitalno denarnico na enem mestu.",
-  href: "/dokumenti",
+  href: "/denarnica",
   icon: _heroicons_vue_outline__WEBPACK_IMPORTED_MODULE_5__["default"],
   iconForeground: "text-yellow-700",
   iconBackground: "bg-yellow-50"
@@ -26473,6 +26475,198 @@ function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len 
   },
   setup: function setup() {
     return {};
+  }
+}));
+
+/***/ }),
+
+/***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/components/Wallet.vue?vue&type=script&lang=js":
+/*!************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/components/Wallet.vue?vue&type=script&lang=js ***!
+  \************************************************************************************************************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/regenerator */ "./node_modules/@babel/runtime/regenerator/index.js");
+/* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _composables_documents__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../composables/documents */ "./resources/js/composables/documents.js");
+/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
+
+
+function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }
+
+function _asyncToGenerator(fn) { return function () { var self = this, args = arguments; return new Promise(function (resolve, reject) { var gen = fn.apply(self, args); function _next(value) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value); } function _throw(err) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err); } _next(undefined); }); }; }
+
+function _toConsumableArray(arr) { return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _unsupportedIterableToArray(arr) || _nonIterableSpread(); }
+
+function _nonIterableSpread() { throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+
+function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
+
+function _iterableToArray(iter) { if (typeof Symbol !== "undefined" && iter[Symbol.iterator] != null || iter["@@iterator"] != null) return Array.from(iter); }
+
+function _arrayWithoutHoles(arr) { if (Array.isArray(arr)) return _arrayLikeToArray(arr); }
+
+function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
+
+
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ((0,vue__WEBPACK_IMPORTED_MODULE_2__.defineComponent)({
+  data: function data() {
+    return {
+      participants: [{
+        id: "user1",
+        name: "AI Stane",
+        imageUrl: "https://www.dropbox.com/s/6ggs6yqmcwcx4i6/stane-logo.jpeg?raw=1"
+      }],
+      // the list of all the participant of the conversation. `name` is the user name, `id` is used to establish the author of a message, `imageUrl` is supposed to be the user avatar.
+      titleImageUrl: "https://a.slack-edge.com/66f9/img/avatars-teams/ava_0001-34.png",
+      messageList: [{
+        type: "text",
+        author: "user1",
+        data: {
+          text: "\u017Divjo Bogdan, kako ti lahko pomagam?"
+        }
+      }, {
+        type: "text",
+        author: "me",
+        data: {
+          text: "\u017Divjo, potrebujem pomo\u010D pri pridobivanju ponudb za stanovanjska posojila."
+        }
+      }, {
+        type: "text",
+        author: "user1",
+        data: {
+          text: "Ni problema, tvoje zanimanje bomo posredovali izbranim bankam in v kratkem bo\u0161 dobil odgovor."
+        }
+      }],
+      // the list of the messages to show, can be paginated and adjusted dynamically
+      newMessagesCount: 0,
+      isChatOpen: false,
+      // to determine whether the chat window should be open or closed
+      showTypingIndicator: "",
+      // when set to a value matching the participant.id it shows the typing indicator for the specific user
+      colors: {
+        header: {
+          bg: "#4e8cff",
+          text: "#ffffff"
+        },
+        launcher: {
+          bg: "#4e8cff"
+        },
+        messageList: {
+          bg: "#ffffff"
+        },
+        sentMessage: {
+          bg: "#4e8cff",
+          text: "#ffffff"
+        },
+        receivedMessage: {
+          bg: "#eaeaea",
+          text: "#222222"
+        },
+        userInput: {
+          bg: "#f4f7f9",
+          text: "#565867"
+        }
+      },
+      // specifies the color scheme for the component
+      alwaysScrollToBottom: false,
+      // when set to true always scrolls the chat to the bottom when new events are in (new message, user starts typing...)
+      messageStyling: true // enables *bold* /emph/ _underline_ and such (more info at github.com/mattezza/msgdown)
+
+    };
+  },
+  methods: {
+    sendMessage: function sendMessage(text) {
+      if (text.length > 0) {
+        this.newMessagesCount = this.isChatOpen ? this.newMessagesCount : this.newMessagesCount + 1;
+        this.onMessageWasSent({
+          author: "kipo",
+          type: "text",
+          data: {
+            text: text
+          }
+        });
+      }
+    },
+    onMessageWasSent: function onMessageWasSent(message) {
+      // called when the user sends a message
+      this.messageList = [].concat(_toConsumableArray(this.messageList), [message]);
+    },
+    openChat: function openChat() {
+      // called when the user clicks on the fab button to open the chat
+      this.isChatOpen = true;
+      this.newMessagesCount = 0;
+    },
+    closeChat: function closeChat() {
+      // called when the user clicks on the botton to close the chat
+      this.isChatOpen = false;
+    },
+    handleScrollToTop: function handleScrollToTop() {// called when the user scrolls message list to top
+      // leverage pagination for loading another page of messages
+    },
+    handleOnType: function handleOnType() {
+      console.log("Emit typing event");
+    },
+    editMessage: function editMessage(message) {
+      var m = this.messageList.find(function (m) {
+        return m.id === message.id;
+      });
+      m.isEdited = true;
+      m.data.text = message.data.text;
+    }
+  },
+  setup: function setup() {
+    var _useDocuments = (0,_composables_documents__WEBPACK_IMPORTED_MODULE_1__["default"])(),
+        documents = _useDocuments.documents,
+        getDocuments = _useDocuments.getDocuments,
+        deleteDocument = _useDocuments.deleteDocument;
+
+    (0,vue__WEBPACK_IMPORTED_MODULE_2__.onMounted)(getDocuments);
+
+    var deleteTheDocument = /*#__PURE__*/function () {
+      var _ref = _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().mark(function _callee(id) {
+        return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().wrap(function _callee$(_context) {
+          while (1) {
+            switch (_context.prev = _context.next) {
+              case 0:
+                if (window.confirm("Are you sure?")) {
+                  _context.next = 2;
+                  break;
+                }
+
+                return _context.abrupt("return");
+
+              case 2:
+                _context.next = 4;
+                return deleteDocument(id);
+
+              case 4:
+                _context.next = 6;
+                return getDocuments();
+
+              case 6:
+              case "end":
+                return _context.stop();
+            }
+          }
+        }, _callee);
+      }));
+
+      return function deleteTheDocument(_x) {
+        return _ref.apply(this, arguments);
+      };
+    }();
+
+    return {
+      documents: documents,
+      deleteTheDocument: deleteTheDocument
+    };
   }
 }));
 
@@ -27569,7 +27763,7 @@ var _hoisted_1 = {
 
 var _hoisted_2 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h2", {
   "class": "text-lg font-semibold text-gray-900"
-}, "Stroški, naročnine, sestanki na enem mestu.", -1
+}, "Stroški, naročnine, opomini na enem mestu.", -1
 /* HOISTED */
 );
 
@@ -27577,7 +27771,7 @@ var _hoisted_3 = {
   "class": "lg:grid lg:grid-cols-12 lg:gap-x-16"
 };
 var _hoisted_4 = {
-  "class": "mt-10 text-center lg:col-start-8 lg:col-end-13 lg:row-start-1 lg:mt-9 xl:col-start-9"
+  "class": "mt-10 text-center lg:col-start-6 lg:col-end-13 lg:row-start-1 lg:mt-9 xl:col-start-7"
 };
 var _hoisted_5 = {
   "class": "flex items-center text-gray-900"
@@ -27629,7 +27823,7 @@ var _hoisted_14 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElement
 );
 
 var _hoisted_15 = {
-  "class": "mt-4 divide-y divide-gray-100 text-sm leading-6 lg:col-span-7 xl:col-span-8"
+  "class": "mt-4 divide-y divide-gray-100 text-sm leading-6 lg:col-span-5 xl:col-span-6"
 };
 var _hoisted_16 = ["src"];
 var _hoisted_17 = {
@@ -27670,7 +27864,7 @@ var _hoisted_26 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElement
 
 var _hoisted_27 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", {
   "class": "sr-only"
-}, "Open options", -1
+}, "Odpri možnosti", -1
 /* HOISTED */
 );
 
@@ -27684,7 +27878,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
 
   var _component_CalendarIcon = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("CalendarIcon");
 
-  var _component_LocationMarkerIcon = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("LocationMarkerIcon");
+  var _component_CheckCircleIcon = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("CheckCircleIcon");
 
   var _component_DotsHorizontalIcon = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("DotsHorizontalIcon");
 
@@ -27736,7 +27930,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
       datetime: meeting.datetime
     }, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(meeting.date) + " at " + (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(meeting.time), 9
     /* TEXT, PROPS */
-    , _hoisted_23)])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_24, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("dt", _hoisted_25, [_hoisted_26, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_LocationMarkerIcon, {
+    , _hoisted_23)])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_24, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("dt", _hoisted_25, [_hoisted_26, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_CheckCircleIcon, {
       "class": "h-5 w-5 text-gray-400",
       "aria-hidden": "true"
     })]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("dd", null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(meeting.location), 1
@@ -27777,7 +27971,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
                     return [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", {
                       href: "#",
                       "class": (0,vue__WEBPACK_IMPORTED_MODULE_0__.normalizeClass)([active ? 'bg-gray-100 text-gray-900' : 'text-gray-700', 'block px-4 py-2 text-sm'])
-                    }, "Edit", 2
+                    }, "Uredi", 2
                     /* CLASS */
                     )];
                   }),
@@ -27790,7 +27984,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
                     return [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", {
                       href: "#",
                       "class": (0,vue__WEBPACK_IMPORTED_MODULE_0__.normalizeClass)([active ? 'bg-gray-100 text-gray-900' : 'text-gray-700', 'block px-4 py-2 text-sm'])
-                    }, "Cancel", 2
+                    }, "Odstrani", 2
                     /* CLASS */
                     )];
                   }),
@@ -28385,17 +28579,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
 
 
-var _hoisted_1 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
-  "class": "max-w-7xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:px-8"
-}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
-  "class": "text-center radial-progress"
-}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", {
-  "class": "mt-1 text-4xl font-extrabold text-gray-900 sm:text-5xl sm:tracking-tight lg:text-6xl"
-}, " Hej, Petra. "), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", {
-  "class": "max-w-xl mt-5 mx-auto text-xl text-gray-500"
-}, " Tvoji dokumenti. ")])], -1
-/* HOISTED */
-);
+var _hoisted_1 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<div class=\"max-w-7xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:px-8\"><div class=\"text-center radial-progress\"><p class=\"mt-1 text-4xl font-extrabold text-gray-900 sm:text-5xl sm:tracking-tight lg:text-6xl\"> Hej, Petra. </p><p class=\"max-w-xl mt-5 mx-auto text-xl text-gray-500\"> Tvoji dokumenti. </p><div class=\"mt-8 flex justify-center\"><div class=\"inline-flex rounded-md shadow\"><a href=\"/denarnica\" class=\"inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-emerald-600 hover:bg-emerald-700\"> Denarnica </a></div><div class=\"ml-3 inline-flex\"><a href=\"/dokumenti\" class=\"inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-emerald-700 bg-emerald-100 hover:bg-emerald-200\"> Dokumenti </a></div></div></div></div>", 1);
 
 var _hoisted_2 = {
   "class": "overflow-hidden overflow-x-auto min-w-full align-middle sm:rounded-md"
@@ -28847,6 +29031,56 @@ var _hoisted_1 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementV
 }, " Tvoja obvestila. ")])], -1
 /* HOISTED */
 );
+
+function render(_ctx, _cache, $props, $setup, $data, $options) {
+  var _component_beautiful_chat = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("beautiful-chat");
+
+  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", null, [_hoisted_1, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_beautiful_chat, {
+    participants: _ctx.participants,
+    titleImageUrl: _ctx.titleImageUrl,
+    onMessageWasSent: _ctx.onMessageWasSent,
+    messageList: _ctx.messageList,
+    newMessagesCount: _ctx.newMessagesCount,
+    isOpen: _ctx.isChatOpen,
+    close: _ctx.closeChat,
+    icons: _ctx.icons,
+    open: _ctx.openChat,
+    showEmoji: true,
+    showFile: true,
+    showEdition: true,
+    showDeletion: true,
+    deletionConfirmation: true,
+    showTypingIndicator: _ctx.showTypingIndicator,
+    showLauncher: true,
+    showCloseButton: true,
+    colors: _ctx.colors,
+    alwaysScrollToBottom: _ctx.alwaysScrollToBottom,
+    disableUserListToggle: false,
+    messageStyling: _ctx.messageStyling,
+    onOnType: _ctx.handleOnType,
+    onEdit: _ctx.editMessage
+  }, null, 8
+  /* PROPS */
+  , ["participants", "titleImageUrl", "onMessageWasSent", "messageList", "newMessagesCount", "isOpen", "close", "icons", "open", "showTypingIndicator", "colors", "alwaysScrollToBottom", "messageStyling", "onOnType", "onEdit"])]);
+}
+
+/***/ }),
+
+/***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/components/Wallet.vue?vue&type=template&id=0d955da4":
+/*!****************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/components/Wallet.vue?vue&type=template&id=0d955da4 ***!
+  \****************************************************************************************************************************************************************************************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "render": () => (/* binding */ render)
+/* harmony export */ });
+/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
+
+
+var _hoisted_1 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<div class=\"max-w-7xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:px-8\"><div class=\"text-center radial-progress\"><p class=\"mt-1 text-4xl font-extrabold text-gray-900 sm:text-5xl sm:tracking-tight lg:text-6xl\"> Hej, Petra. </p><p class=\"max-w-xl mt-5 mx-auto text-xl text-gray-500\"> Poveži vse račune na enem mestu. </p><div class=\"mt-8 flex justify-center\"><div class=\"inline-flex rounded-md shadow\"><a href=\"/denarnica\" class=\"inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-emerald-600 hover:bg-emerald-700\"> Denarnica </a></div><div class=\"ml-3 inline-flex\"><a href=\"/dokumenti\" class=\"inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-emerald-700 bg-emerald-100 hover:bg-emerald-200\"> Dokumenti </a></div></div></div></div>", 1);
 
 function render(_ctx, _cache, $props, $setup, $data, $options) {
   var _component_beautiful_chat = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("beautiful-chat");
@@ -30280,7 +30514,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
-/* harmony import */ var vue3_radial_progress__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! vue3-radial-progress */ "./node_modules/vue3-radial-progress/dist/RadialProgressBar.esm.js");
+/* harmony import */ var vue3_radial_progress__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! vue3-radial-progress */ "./node_modules/vue3-radial-progress/dist/RadialProgressBar.esm.js");
 /* harmony import */ var vue3_beautiful_chat__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! vue3-beautiful-chat */ "./node_modules/vue3-beautiful-chat/index.js");
 /* harmony import */ var vue3_apexcharts__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! vue3-apexcharts */ "./node_modules/vue3-apexcharts/dist/vue3-apexcharts.common.js");
 /* harmony import */ var vue3_apexcharts__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(vue3_apexcharts__WEBPACK_IMPORTED_MODULE_2__);
@@ -30301,9 +30535,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_loans_StepFour__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./components/loans/StepFour */ "./resources/js/components/loans/StepFour.vue");
 /* harmony import */ var _components_loans_StepFive__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ./components/loans/StepFive */ "./resources/js/components/loans/StepFive.vue");
 /* harmony import */ var _components_Calendar__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ./components/Calendar */ "./resources/js/components/Calendar.vue");
+/* harmony import */ var _components_Wallet__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ./components/Wallet */ "./resources/js/components/Wallet.vue");
 __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
 
 __webpack_require__(/*! alpinejs */ "./node_modules/alpinejs/dist/module.esm.js");
+
 
 
 
@@ -30343,9 +30579,10 @@ __webpack_require__(/*! alpinejs */ "./node_modules/alpinejs/dist/module.esm.js"
     StepThree: _components_loans_StepThree__WEBPACK_IMPORTED_MODULE_16__["default"],
     StepFour: _components_loans_StepFour__WEBPACK_IMPORTED_MODULE_17__["default"],
     StepFive: _components_loans_StepFive__WEBPACK_IMPORTED_MODULE_18__["default"],
-    Calendar: _components_Calendar__WEBPACK_IMPORTED_MODULE_19__["default"]
+    Calendar: _components_Calendar__WEBPACK_IMPORTED_MODULE_19__["default"],
+    Wallet: _components_Wallet__WEBPACK_IMPORTED_MODULE_20__["default"]
   }
-}).use(_router__WEBPACK_IMPORTED_MODULE_3__["default"]).use(vue3_beautiful_chat__WEBPACK_IMPORTED_MODULE_1__["default"]).use(vue3_radial_progress__WEBPACK_IMPORTED_MODULE_20__["default"]).use((vue3_apexcharts__WEBPACK_IMPORTED_MODULE_2___default())).mount('#app');
+}).use(_router__WEBPACK_IMPORTED_MODULE_3__["default"]).use(vue3_beautiful_chat__WEBPACK_IMPORTED_MODULE_1__["default"]).use(vue3_radial_progress__WEBPACK_IMPORTED_MODULE_21__["default"]).use((vue3_apexcharts__WEBPACK_IMPORTED_MODULE_2___default())).mount('#app');
 
 /***/ }),
 
@@ -30603,7 +30840,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var vue_router__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! vue-router */ "./node_modules/vue-router/dist/vue-router.esm-bundler.js");
+/* harmony import */ var vue_router__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! vue-router */ "./node_modules/vue-router/dist/vue-router.esm-bundler.js");
 /* harmony import */ var _components_Loans__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../components/Loans */ "./resources/js/components/Loans.vue");
 /* harmony import */ var _components_Home__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/Home */ "./resources/js/components/Home.vue");
 /* harmony import */ var _components_Costs__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/Costs */ "./resources/js/components/Costs.vue");
@@ -30622,6 +30859,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_loans_StepFour__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ../components/loans/StepFour */ "./resources/js/components/loans/StepFour.vue");
 /* harmony import */ var _components_loans_StepFive__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ../components/loans/StepFive */ "./resources/js/components/loans/StepFive.vue");
 /* harmony import */ var _components_Calendar__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ../components/Calendar */ "./resources/js/components/Calendar.vue");
+/* harmony import */ var _components_Wallet__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ../components/Wallet */ "./resources/js/components/Wallet.vue");
+
 
 
 
@@ -30674,6 +30913,10 @@ var routes = [{
   name: 'documents',
   component: _components_Documents__WEBPACK_IMPORTED_MODULE_9__["default"]
 }, {
+  path: '/denarnica',
+  name: 'wallet',
+  component: _components_Wallet__WEBPACK_IMPORTED_MODULE_18__["default"]
+}, {
   path: '/obvestila',
   name: 'notifications',
   component: _components_Notifications__WEBPACK_IMPORTED_MODULE_8__["default"]
@@ -30715,8 +30958,8 @@ var routes = [{
   component: _components_documents_EditDocument__WEBPACK_IMPORTED_MODULE_11__["default"],
   props: true
 }];
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ((0,vue_router__WEBPACK_IMPORTED_MODULE_18__.createRouter)({
-  history: (0,vue_router__WEBPACK_IMPORTED_MODULE_18__.createWebHistory)(),
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ((0,vue_router__WEBPACK_IMPORTED_MODULE_19__.createRouter)({
+  history: (0,vue_router__WEBPACK_IMPORTED_MODULE_19__.createWebHistory)(),
   routes: routes
 }));
 
@@ -50176,6 +50419,34 @@ if (false) {}
 
 /***/ }),
 
+/***/ "./resources/js/components/Wallet.vue":
+/*!********************************************!*\
+  !*** ./resources/js/components/Wallet.vue ***!
+  \********************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _Wallet_vue_vue_type_template_id_0d955da4__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Wallet.vue?vue&type=template&id=0d955da4 */ "./resources/js/components/Wallet.vue?vue&type=template&id=0d955da4");
+/* harmony import */ var _Wallet_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Wallet.vue?vue&type=script&lang=js */ "./resources/js/components/Wallet.vue?vue&type=script&lang=js");
+/* harmony import */ var _var_www_html_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./node_modules/vue-loader/dist/exportHelper.js */ "./node_modules/vue-loader/dist/exportHelper.js");
+
+
+
+
+;
+const __exports__ = /*#__PURE__*/(0,_var_www_html_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__["default"])(_Wallet_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__["default"], [['render',_Wallet_vue_vue_type_template_id_0d955da4__WEBPACK_IMPORTED_MODULE_0__.render],['__file',"resources/js/components/Wallet.vue"]])
+/* hot reload */
+if (false) {}
+
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__exports__);
+
+/***/ }),
+
 /***/ "./resources/js/components/documents/AddDocument.vue":
 /*!***********************************************************!*\
   !*** ./resources/js/components/documents/AddDocument.vue ***!
@@ -50563,6 +50834,22 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./resources/js/components/Wallet.vue?vue&type=script&lang=js":
+/*!********************************************************************!*\
+  !*** ./resources/js/components/Wallet.vue?vue&type=script&lang=js ***!
+  \********************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* reexport safe */ _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_Wallet_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_0__["default"])
+/* harmony export */ });
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_Wallet_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!../../../node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./Wallet.vue?vue&type=script&lang=js */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/components/Wallet.vue?vue&type=script&lang=js");
+ 
+
+/***/ }),
+
 /***/ "./resources/js/components/documents/AddDocument.vue?vue&type=script&lang=js":
 /*!***********************************************************************************!*\
   !*** ./resources/js/components/documents/AddDocument.vue?vue&type=script&lang=js ***!
@@ -50847,6 +51134,22 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "render": () => (/* reexport safe */ _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_templateLoader_js_ruleSet_1_rules_2_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_Notifications_vue_vue_type_template_id_d7f806e6__WEBPACK_IMPORTED_MODULE_0__.render)
 /* harmony export */ });
 /* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_templateLoader_js_ruleSet_1_rules_2_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_Notifications_vue_vue_type_template_id_d7f806e6__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!../../../node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!../../../node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./Notifications.vue?vue&type=template&id=d7f806e6 */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/components/Notifications.vue?vue&type=template&id=d7f806e6");
+
+
+/***/ }),
+
+/***/ "./resources/js/components/Wallet.vue?vue&type=template&id=0d955da4":
+/*!**************************************************************************!*\
+  !*** ./resources/js/components/Wallet.vue?vue&type=template&id=0d955da4 ***!
+  \**************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "render": () => (/* reexport safe */ _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_templateLoader_js_ruleSet_1_rules_2_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_Wallet_vue_vue_type_template_id_0d955da4__WEBPACK_IMPORTED_MODULE_0__.render)
+/* harmony export */ });
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_templateLoader_js_ruleSet_1_rules_2_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_Wallet_vue_vue_type_template_id_0d955da4__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!../../../node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!../../../node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./Wallet.vue?vue&type=template&id=0d955da4 */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/components/Wallet.vue?vue&type=template&id=0d955da4");
 
 
 /***/ }),
@@ -56883,6 +57186,37 @@ function render(_ctx, _cache) {
     (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("path", {
       "fill-rule": "evenodd",
       d: "M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z",
+      "clip-rule": "evenodd"
+    })
+  ]))
+}
+
+/***/ }),
+
+/***/ "./node_modules/@heroicons/vue/solid/esm/CheckCircleIcon.js":
+/*!******************************************************************!*\
+  !*** ./node_modules/@heroicons/vue/solid/esm/CheckCircleIcon.js ***!
+  \******************************************************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ render)
+/* harmony export */ });
+/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
+
+
+function render(_ctx, _cache) {
+  return ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)("svg", {
+    xmlns: "http://www.w3.org/2000/svg",
+    viewBox: "0 0 20 20",
+    fill: "currentColor",
+    "aria-hidden": "true"
+  }, [
+    (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("path", {
+      "fill-rule": "evenodd",
+      d: "M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z",
       "clip-rule": "evenodd"
     })
   ]))

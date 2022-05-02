@@ -17,6 +17,7 @@ import StepThree from '../components/loans/StepThree'
 import StepFour from '../components/loans/StepFour'
 import StepFive from '../components/loans/StepFive'
 import Calendar from '../components/Calendar'
+import Wallet from '../components/Wallet'
 
 const routes = [
     {
@@ -58,6 +59,11 @@ const routes = [
         path: '/dokumenti',
         name: 'documents',
         component: Documents
+    },
+    {
+        path: '/denarnica',
+        name: 'wallet',
+        component: Wallet
     },
     {
         path: '/obvestila',

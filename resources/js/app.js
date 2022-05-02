@@ -23,6 +23,7 @@ import StepThree from './components/loans/StepThree'
 import StepFour from './components/loans/StepFour'
 import StepFive from './components/loans/StepFive'
 import Calendar from './components/Calendar'
+import Wallet from './components/Wallet'
 
 createApp({
     components: {
@@ -42,6 +43,7 @@ createApp({
         StepFour,
         StepFive,
         Calendar,
+        Wallet,
     }
 })
 .use(router)
