@@ -55,9 +55,7 @@
                         </a>
                     </h3>
                     <p class="mt-2 text-sm text-gray-500">
-                        Doloribus dolores nostrum quia qui natus officia quod et
-                        dolorem. Sit repellendus qui ut at blanditiis et quo et
-                        molestiae.
+                        Stane ti pomaga do najbolj ugodnega kredita hitro in preprosto.
                     </p>
                 </div>
                 <span
@@ -109,22 +107,36 @@
 <script>
 import { ref, defineComponent } from "vue";
 import { CheckIcon } from "@heroicons/vue/solid";
-import { AcademicCapIcon, CashIcon } from "@heroicons/vue/outline";
+import { AcademicCapIcon, CashIcon, HomeIcon, GlobeIcon } from "@heroicons/vue/outline";
 
 const actions = [
     {
         title: "Stanovanjski kredit",
         href: "/kredit/prvi-korak",
-        icon: CashIcon,
-        iconForeground: "text-yellow-700",
-        iconBackground: "bg-yellow-50",
+        icon: HomeIcon,
+        iconForeground: "text-indigo-700",
+        iconBackground: "bg-indigo-50",
+    },
+    {
+        title: "EKO kredit",
+        href: "/kredit/prvi-korak",
+        icon: GlobeIcon,
+        iconForeground: "text-emerald-700",
+        iconBackground: "bg-emerald-50",
     },
     {
         title: "Študentski kredit",
         href: "/kredit/prvi-korak",
         icon: AcademicCapIcon,
-        iconForeground: "text-indigo-700",
-        iconBackground: "bg-indigo-50",
+        iconForeground: "text-blue-700",
+        iconBackground: "bg-blue-50",
+    },
+    {
+        title: "Osebni kredit",
+        href: "/kredit/prvi-korak",
+        icon: CashIcon,
+        iconForeground: "text-yellow-700",
+        iconBackground: "bg-yellow-50",
     },
 ];
 
@@ -237,6 +249,11 @@ export default defineComponent({
     },
     components: {
         CheckIcon,
+        HomeIcon,
+        GlobeIcon,
+        CashIcon,
+        AcademicCapIcon,
+        
     },
     setup() {
         const completedSteps = ref(0);

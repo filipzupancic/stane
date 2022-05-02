@@ -26188,9 +26188,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
-/* harmony import */ var _heroicons_vue_solid__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @heroicons/vue/solid */ "./node_modules/@heroicons/vue/solid/esm/CheckIcon.js");
-/* harmony import */ var _heroicons_vue_outline__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @heroicons/vue/outline */ "./node_modules/@heroicons/vue/outline/esm/CashIcon.js");
-/* harmony import */ var _heroicons_vue_outline__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @heroicons/vue/outline */ "./node_modules/@heroicons/vue/outline/esm/AcademicCapIcon.js");
+/* harmony import */ var _heroicons_vue_solid__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @heroicons/vue/solid */ "./node_modules/@heroicons/vue/solid/esm/CheckIcon.js");
+/* harmony import */ var _heroicons_vue_outline__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @heroicons/vue/outline */ "./node_modules/@heroicons/vue/outline/esm/HomeIcon.js");
+/* harmony import */ var _heroicons_vue_outline__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @heroicons/vue/outline */ "./node_modules/@heroicons/vue/outline/esm/GlobeIcon.js");
+/* harmony import */ var _heroicons_vue_outline__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @heroicons/vue/outline */ "./node_modules/@heroicons/vue/outline/esm/AcademicCapIcon.js");
+/* harmony import */ var _heroicons_vue_outline__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @heroicons/vue/outline */ "./node_modules/@heroicons/vue/outline/esm/CashIcon.js");
 function _toConsumableArray(arr) { return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _unsupportedIterableToArray(arr) || _nonIterableSpread(); }
 
 function _nonIterableSpread() { throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
@@ -26210,14 +26212,26 @@ var actions = [{
   title: "Stanovanjski kredit",
   href: "/kredit/prvi-korak",
   icon: _heroicons_vue_outline__WEBPACK_IMPORTED_MODULE_1__["default"],
-  iconForeground: "text-yellow-700",
-  iconBackground: "bg-yellow-50"
+  iconForeground: "text-indigo-700",
+  iconBackground: "bg-indigo-50"
+}, {
+  title: "EKO kredit",
+  href: "/kredit/prvi-korak",
+  icon: _heroicons_vue_outline__WEBPACK_IMPORTED_MODULE_2__["default"],
+  iconForeground: "text-emerald-700",
+  iconBackground: "bg-emerald-50"
 }, {
   title: "Študentski kredit",
   href: "/kredit/prvi-korak",
-  icon: _heroicons_vue_outline__WEBPACK_IMPORTED_MODULE_2__["default"],
-  iconForeground: "text-indigo-700",
-  iconBackground: "bg-indigo-50"
+  icon: _heroicons_vue_outline__WEBPACK_IMPORTED_MODULE_3__["default"],
+  iconForeground: "text-blue-700",
+  iconBackground: "bg-blue-50"
+}, {
+  title: "Osebni kredit",
+  href: "/kredit/prvi-korak",
+  icon: _heroicons_vue_outline__WEBPACK_IMPORTED_MODULE_4__["default"],
+  iconForeground: "text-yellow-700",
+  iconBackground: "bg-yellow-50"
 }];
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ((0,vue__WEBPACK_IMPORTED_MODULE_0__.defineComponent)({
   data: function data() {
@@ -26327,7 +26341,11 @@ var actions = [{
     }
   },
   components: {
-    CheckIcon: _heroicons_vue_solid__WEBPACK_IMPORTED_MODULE_3__["default"]
+    CheckIcon: _heroicons_vue_solid__WEBPACK_IMPORTED_MODULE_5__["default"],
+    HomeIcon: _heroicons_vue_outline__WEBPACK_IMPORTED_MODULE_1__["default"],
+    GlobeIcon: _heroicons_vue_outline__WEBPACK_IMPORTED_MODULE_2__["default"],
+    CashIcon: _heroicons_vue_outline__WEBPACK_IMPORTED_MODULE_4__["default"],
+    AcademicCapIcon: _heroicons_vue_outline__WEBPACK_IMPORTED_MODULE_3__["default"]
   },
   setup: function setup() {
     var completedSteps = (0,vue__WEBPACK_IMPORTED_MODULE_0__.ref)(0);
@@ -26491,16 +26509,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/regenerator */ "./node_modules/@babel/runtime/regenerator/index.js");
-/* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _composables_documents__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../composables/documents */ "./resources/js/composables/documents.js");
-/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
-
-
-function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }
-
-function _asyncToGenerator(fn) { return function () { var self = this, args = arguments; return new Promise(function (resolve, reject) { var gen = fn.apply(self, args); function _next(value) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value); } function _throw(err) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err); } _next(undefined); }); }; }
-
+/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
+/* harmony import */ var _heroicons_vue_solid__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @heroicons/vue/solid */ "./node_modules/@heroicons/vue/solid/esm/PlusIcon.js");
 function _toConsumableArray(arr) { return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _unsupportedIterableToArray(arr) || _nonIterableSpread(); }
 
 function _nonIterableSpread() { throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
@@ -26515,7 +26525,24 @@ function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len 
 
 
 
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ((0,vue__WEBPACK_IMPORTED_MODULE_2__.defineComponent)({
+var banks = [{
+  name: "Sparkasse",
+  role: "",
+  imageUrl: "https://www.dropbox.com/s/l2trkicqi2dcbni/Sparkasse.svg.png?raw=1"
+}, {
+  name: "NLB",
+  role: "",
+  imageUrl: "https://www.dropbox.com/s/wnyq1w31ayk6ss1/nlb.jpg?raw=1"
+}, {
+  name: "Revolut",
+  role: "",
+  imageUrl: "https://www.dropbox.com/s/eggdikc7lv37mqt/r.png?raw=1"
+}, {
+  name: "N26",
+  role: "",
+  imageUrl: "https://www.dropbox.com/s/1ygazhfofd7s3vk/n26-logo.png?raw=1"
+}];
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ((0,vue__WEBPACK_IMPORTED_MODULE_0__.defineComponent)({
   data: function data() {
     return {
       participants: [{
@@ -26621,51 +26648,12 @@ function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len 
       m.data.text = message.data.text;
     }
   },
+  components: {
+    PlusIcon: _heroicons_vue_solid__WEBPACK_IMPORTED_MODULE_1__["default"]
+  },
   setup: function setup() {
-    var _useDocuments = (0,_composables_documents__WEBPACK_IMPORTED_MODULE_1__["default"])(),
-        documents = _useDocuments.documents,
-        getDocuments = _useDocuments.getDocuments,
-        deleteDocument = _useDocuments.deleteDocument;
-
-    (0,vue__WEBPACK_IMPORTED_MODULE_2__.onMounted)(getDocuments);
-
-    var deleteTheDocument = /*#__PURE__*/function () {
-      var _ref = _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().mark(function _callee(id) {
-        return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().wrap(function _callee$(_context) {
-          while (1) {
-            switch (_context.prev = _context.next) {
-              case 0:
-                if (window.confirm("Are you sure?")) {
-                  _context.next = 2;
-                  break;
-                }
-
-                return _context.abrupt("return");
-
-              case 2:
-                _context.next = 4;
-                return deleteDocument(id);
-
-              case 4:
-                _context.next = 6;
-                return getDocuments();
-
-              case 6:
-              case "end":
-                return _context.stop();
-            }
-          }
-        }, _callee);
-      }));
-
-      return function deleteTheDocument(_x) {
-        return _ref.apply(this, arguments);
-      };
-    }();
-
     return {
-      documents: documents,
-      deleteTheDocument: deleteTheDocument
+      banks: banks
     };
   }
 }));
@@ -28928,7 +28916,7 @@ var _hoisted_6 = /*#__PURE__*/_withScopeId(function () {
 var _hoisted_7 = /*#__PURE__*/_withScopeId(function () {
   return /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", {
     "class": "mt-2 text-sm text-gray-500"
-  }, " Doloribus dolores nostrum quia qui natus officia quod et dolorem. Sit repellendus qui ut at blanditiis et quo et molestiae. ", -1
+  }, " Stane ti pomaga do najbolj ugodnega kredita hitro in preprosto. ", -1
   /* HOISTED */
   );
 });
@@ -29079,13 +29067,75 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
 
+var _hoisted_1 = {
+  "class": "max-w-7xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:px-8"
+};
 
-var _hoisted_1 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<div class=\"max-w-7xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:px-8\"><div class=\"text-center radial-progress\"><p class=\"mt-1 text-4xl font-extrabold text-gray-900 sm:text-5xl sm:tracking-tight lg:text-6xl\"> Hej, Petra. </p><p class=\"max-w-xl mt-5 mx-auto text-xl text-gray-500\"> Poveži vse račune na enem mestu. </p><div class=\"mt-8 flex justify-center\"><div class=\"inline-flex rounded-md shadow\"><a href=\"/denarnica\" class=\"inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-emerald-600 hover:bg-emerald-700\"> Denarnica </a></div><div class=\"ml-3 inline-flex\"><a href=\"/dokumenti\" class=\"inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-emerald-700 bg-emerald-100 hover:bg-emerald-200\"> Dokumenti </a></div></div></div></div>", 1);
+var _hoisted_2 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<div class=\"text-center radial-progress\"><p class=\"mt-1 text-4xl font-extrabold text-gray-900 sm:text-5xl sm:tracking-tight lg:text-6xl\"> Hej, Petra. </p><p class=\"max-w-xl mt-5 mx-auto text-xl text-gray-500\"> Tvoja digitalna denarnica. </p><div class=\"mt-8 flex justify-center\"><div class=\"inline-flex rounded-md shadow\"><a href=\"/denarnica\" class=\"inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-emerald-600 hover:bg-emerald-700\"> Denarnica </a></div><div class=\"ml-3 inline-flex\"><a href=\"/dokumenti\" class=\"inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-emerald-700 bg-emerald-100 hover:bg-emerald-200\"> Dokumenti </a></div></div></div>", 1);
 
+var _hoisted_3 = {
+  "class": "max-w-md mx-auto sm:max-w-3xl pt-8"
+};
+
+var _hoisted_4 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<div><div class=\"text-center\"><svg class=\"mx-auto h-12 w-12 text-gray-400\" fill=\"none\" stroke=\"currentColor\" viewBox=\"0 0 48 48\" aria-hidden=\"true\"><path stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" d=\"M17 9V7a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2m2 4h10a2 2 0 002-2v-6a2 2 0 00-2-2H9a2 2 0 00-2 2v6a2 2 0 002 2zm7-5a2 2 0 11-4 0 2 2 0 014 0z\"></path></svg><h2 class=\"mt-2 text-lg font-medium text-gray-900\"> Dodaj račun. </h2><p class=\"mt-1 text-sm text-gray-500\"> Poveži vse bančne račune na enem mestu. </p></div><form class=\"mt-6 sm:flex sm:items-center\" action=\"#\"><label for=\"emails\" class=\"sr-only\">Banke in denarnice</label><div class=\"relative rounded-md shadow-sm sm:min-w-0 sm:flex-1\"><input type=\"text\" name=\"emails\" id=\"emails\" class=\"focus:ring-blue-500 focus:border-blue-500 block w-full pr-32 sm:text-sm border-gray-300 rounded-md\" placeholder=\"Ime banke ali mobilne denarnice\"><div class=\"absolute inset-y-0 right-0 flex items-center\"><span class=\"h-4 w-px bg-gray-200\" aria-hidden=\"true\"></span><label for=\"role\" class=\"sr-only\">Role</label><select id=\"role\" name=\"role\" class=\"focus:ring-blue-500 focus:border-blue-500 h-full py-0 pl-4 pr-7 border-transparent bg-transparent text-gray-500 sm:text-sm rounded-md\"><option>Banke</option><option>Denarnice</option></select></div></div><div class=\"mt-3 sm:mt-0 sm:ml-4 sm:flex-shrink-0\"><button type=\"submit\" class=\"block w-full text-center px-4 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500\"> Poveži </button></div></form></div>", 1);
+
+var _hoisted_5 = {
+  "class": "mt-10"
+};
+
+var _hoisted_6 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h3", {
+  "class": "text-xs font-semibold text-gray-500 uppercase tracking-wide"
+}, " Poišči banko na seznamu. ", -1
+/* HOISTED */
+);
+
+var _hoisted_7 = {
+  role: "list",
+  "class": "mt-4 grid grid-cols-1 gap-4 sm:grid-cols-2"
+};
+var _hoisted_8 = {
+  type: "button",
+  "class": "group p-2 w-full flex items-center justify-between rounded-full border border-gray-300 shadow-sm space-x-3 text-left hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
+};
+var _hoisted_9 = {
+  "class": "min-w-0 flex-1 flex items-center space-x-3"
+};
+var _hoisted_10 = {
+  "class": "block flex-shrink-0"
+};
+var _hoisted_11 = ["src"];
+var _hoisted_12 = {
+  "class": "block min-w-0 flex-1"
+};
+var _hoisted_13 = {
+  "class": "block text-sm font-medium text-gray-900 truncate"
+};
+var _hoisted_14 = {
+  "class": "flex-shrink-0 h-10 w-10 inline-flex items-center justify-center"
+};
 function render(_ctx, _cache, $props, $setup, $data, $options) {
+  var _component_PlusIcon = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("PlusIcon");
+
   var _component_beautiful_chat = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("beautiful-chat");
 
-  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", null, [_hoisted_1, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_beautiful_chat, {
+  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_1, [_hoisted_2, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_3, [_hoisted_4, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_5, [_hoisted_6, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("ul", _hoisted_7, [((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderList)(_ctx.banks, function (bank, bankIdx) {
+    return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("li", {
+      key: bankIdx
+    }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("button", _hoisted_8, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", _hoisted_9, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", _hoisted_10, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("img", {
+      "class": "h-10 w-10 rounded-full",
+      src: bank.imageUrl,
+      alt: ""
+    }, null, 8
+    /* PROPS */
+    , _hoisted_11)]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", _hoisted_12, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", _hoisted_13, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(bank.name), 1
+    /* TEXT */
+    )])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", _hoisted_14, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_PlusIcon, {
+      "class": "h-5 w-5 text-gray-400 group-hover:text-gray-500",
+      "aria-hidden": "true"
+    })])])]);
+  }), 128
+  /* KEYED_FRAGMENT */
+  ))])])])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_beautiful_chat, {
     participants: _ctx.participants,
     titleImageUrl: _ctx.titleImageUrl,
     onMessageWasSent: _ctx.onMessageWasSent,
@@ -57129,6 +57179,39 @@ function render(_ctx, _cache) {
 
 /***/ }),
 
+/***/ "./node_modules/@heroicons/vue/outline/esm/HomeIcon.js":
+/*!*************************************************************!*\
+  !*** ./node_modules/@heroicons/vue/outline/esm/HomeIcon.js ***!
+  \*************************************************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ render)
+/* harmony export */ });
+/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
+
+
+function render(_ctx, _cache) {
+  return ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)("svg", {
+    xmlns: "http://www.w3.org/2000/svg",
+    fill: "none",
+    viewBox: "0 0 24 24",
+    "stroke-width": "2",
+    stroke: "currentColor",
+    "aria-hidden": "true"
+  }, [
+    (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("path", {
+      "stroke-linecap": "round",
+      "stroke-linejoin": "round",
+      d: "M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"
+    })
+  ]))
+}
+
+/***/ }),
+
 /***/ "./node_modules/@heroicons/vue/outline/esm/UsersIcon.js":
 /*!**************************************************************!*\
   !*** ./node_modules/@heroicons/vue/outline/esm/UsersIcon.js ***!
@@ -57395,6 +57478,37 @@ function render(_ctx, _cache) {
     (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("path", {
       "fill-rule": "evenodd",
       d: "M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z",
+      "clip-rule": "evenodd"
+    })
+  ]))
+}
+
+/***/ }),
+
+/***/ "./node_modules/@heroicons/vue/solid/esm/PlusIcon.js":
+/*!***********************************************************!*\
+  !*** ./node_modules/@heroicons/vue/solid/esm/PlusIcon.js ***!
+  \***********************************************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ render)
+/* harmony export */ });
+/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
+
+
+function render(_ctx, _cache) {
+  return ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)("svg", {
+    xmlns: "http://www.w3.org/2000/svg",
+    viewBox: "0 0 20 20",
+    fill: "currentColor",
+    "aria-hidden": "true"
+  }, [
+    (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("path", {
+      "fill-rule": "evenodd",
+      d: "M10 3a1 1 0 011 1v5h5a1 1 0 110 2h-5v5a1 1 0 11-2 0v-5H4a1 1 0 110-2h5V4a1 1 0 011-1z",
       "clip-rule": "evenodd"
     })
   ]))
