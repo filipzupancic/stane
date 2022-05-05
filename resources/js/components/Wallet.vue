@@ -66,7 +66,7 @@
                             name="emails"
                             id="emails"
                             class="focus:ring-indigo-500 focus:border-indigo-500 block w-full pr-32 sm:text-sm border-gray-300 rounded-md"
-                            placeholder="Enter an email"
+                            placeholder="Ime banke ali denarnice"
                         />
                         <div
                             class="absolute inset-y-0 right-0 flex items-center"
@@ -204,9 +204,9 @@ export default defineComponent({
             participants: [
                 {
                     id: "user1",
-                    name: "AI Stane",
+                    name: "AI finbit",
                     imageUrl:
-                        "https://www.dropbox.com/s/6ggs6yqmcwcx4i6/stane-logo.jpeg?raw=1",
+                        "https://www.dropbox.com/s/6ggs6yqmcwcx4i6/finbit-logo.jpeg?raw=1",
                 },
             ], // the list of all the participant of the conversation. `name` is the user name, `id` is used to establish the author of a message, `imageUrl` is supposed to be the user avatar.
             titleImageUrl:

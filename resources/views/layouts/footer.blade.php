@@ -31,7 +31,7 @@
             </a>
 
         </div>
-        <p class="mt-8 text-center text-base text-gray-900">Stane ti pomaga pri vsem, kar stane.</p>
+        <p class="mt-8 text-center text-base text-gray-900">finbit ti pomaga pri vsem, kar finbit.</p>
     </div>
 </footer>
 

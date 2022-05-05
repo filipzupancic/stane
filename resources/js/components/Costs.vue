@@ -11,118 +11,102 @@
                 </h2>
             </div>
         </div>
-        <!-- Actions panel -->
-        <section aria-labelledby="quick-links-title">
+        <div class="mt-8 flex justify-center pb-8">
+            <div class="inline-flex rounded-md shadow">
+                <a
+                    href="/stroski"
+                    class="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700"
+                >
+                    Poraba
+                </a>
+            </div>
+            <div class="ml-3 inline-flex">
+                <a
+                    href="/nizji-stroski"
+                    class="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-blue-700 bg-blue-100 hover:bg-blue-200"
+                >
+                    Znižaj stroške
+                </a>
+            </div>
+        </div>
+        <div
+            class="rounded-lg bg-gray-200 overflow-hidden shadow divide-y divide-gray-200 sm:divide-y-0 sm:grid sm:grid-cols-2 sm:gap-px"
+        >
             <div
-                class="rounded-lg bg-gray-200 overflow-hidden shadow divide-y divide-gray-200 sm:divide-y-0 sm:grid sm:grid-cols-2 sm:gap-px"
+                :class="[
+                    'rounded-tl-lg rounded-tr-lg sm:rounded-tr-none',
+                    'relative group bg-white p-6 focus-within:ring-2 focus-within:ring-inset focus-within:ring-blue-500',
+                ]"
             >
-                <div class="cost-graph mt-8 flex justify-center">
-                    <div class="main-container">
-                        <div class="year-stats">
-                            <div class="month-group">
-                                <div class="bar h-100"></div>
-                                <p class="month">Jan</p>
-                            </div>
-                            <div class="month-group">
-                                <div class="bar h-50"></div>
-                                <p class="month">Feb</p>
-                            </div>
-                            <div class="month-group">
-                                <div class="bar h-75"></div>
-                                <p class="month">Mar</p>
-                            </div>
-                            <div class="month-group">
-                                <div class="bar h-25"></div>
-                                <p class="month">Apr</p>
-                            </div>
-                            <div class="month-group selected">
-                                <div class="bar h-100"></div>
-                                <p class="month">May</p>
-                            </div>
-                            <div class="month-group">
-                                <div class="bar h-50"></div>
-                                <p class="month">Jun</p>
-                            </div>
-                            <div class="month-group">
-                                <div class="bar h-75"></div>
-                                <p class="month">Jul</p>
-                            </div>
-                            <div class="month-group">
-                                <div class="bar h-25"></div>
-                                <p class="month">Aug</p>
-                            </div>
-                            <div class="month-group">
-                                <div class="bar h-50"></div>
-                                <p class="month">Sep</p>
-                            </div>
-                            <div class="month-group">
-                                <div class="bar h-75"></div>
-                                <p class="month">Oct</p>
-                            </div>
-                            <div class="month-group">
-                                <div class="bar h-25"></div>
-                                <p class="month">Nov</p>
-                            </div>
-                            <div class="month-group">
-                                <div class="bar h-100"></div>
-                                <p class="month">Dez</p>
-                            </div>
-                        </div>
-                    </div>
+                <div>
+                    <span
+                        :class="[
+                            'bg-emerald-50',
+                            'text-emerald-700',
+                            'rounded-lg inline-flex p-3 ring-4 ring-white',
+                        ]"
+                    >
+                        <component
+                            :is="CashIcon"
+                            class="h-6 w-6"
+                            aria-hidden="true"
+                        />
+                    </span>
                 </div>
-
-                <div class="cost-graph mt-8 flex justify-center">
-                    <div class="main-container">
-                        <div class="stats-info">
-                            <div class="graph-container">
-                                <div class="percent">
-                                    <svg
-                                        viewBox="0 0 36 36"
-                                        class="circular-chart"
-                                    >
-                                        <path
-                                            class="circle"
-                                            stroke-dasharray="100, 100"
-                                            d="M18 2.0845
-      a 15.9155 15.9155 0 0 1 0 31.831
-      a 15.9155 15.9155 0 0 1 0 -31.831"
-                                        />
-                                        <path
-                                            class="circle"
-                                            stroke-dasharray="85, 100"
-                                            d="M18 2.0845
-      a 15.9155 15.9155 0 0 1 0 31.831
-      a 15.9155 15.9155 0 0 1 0 -31.831"
-                                        />
-                                        <path
-                                            class="circle"
-                                            stroke-dasharray="60, 100"
-                                            d="M18 2.0845
-      a 15.9155 15.9155 0 0 1 0 31.831
-      a 15.9155 15.9155 0 0 1 0 -31.831"
-                                        />
-                                        <path
-                                            class="circle"
-                                            stroke-dasharray="30, 100"
-                                            d="M18 2.0845
-      a 15.9155 15.9155 0 0 1 0 31.831
-      a 15.9155 15.9155 0 0 1 0 -31.831"
-                                        />
-                                    </svg>
-                                </div>
-                                <p>Skupaj: €2075</p>
-                            </div>
-
-                            <div class="info">
-                                <p>Največji strošek: <span>živila</span></p>
-                                <p>Nižja poraba: <span>avto</span></p>
-                                <p>Prihranek: <span>€92</span></p>
-                            </div>
+                <div class="mt-8">
+                    <h3 class="text-lg font-medium">
+                        <div class="focus:outline-none">
+                            <!-- Extend touch target to entire panel -->
+                            <span class="absolute inset-0" aria-hidden="true" />
+                            <HistogramSlider
+                                style="margin: 0px auto"
+                                :width="300"
+                                :bar-height="100"
+                                :data="monthly_costs"
+                                :prettify="prettify"
+                                :drag-interval="true"
+                                :force-edges="false"
+                                :colors="['#4facfe', '#00f2fe']"
+                                :min="new Date(2004, 11, 24).valueOf()"
+                                :max="new Date(2017, 11, 24).valueOf()"
+                            />
                         </div>
-                    </div>
+                    </h3>
                 </div>
             </div>
-        </section>
+            <div
+                class="rounded-tl-lg rounded-tr-lg sm:rounded-tr-none relative group bg-white p-6 focus-within:ring-2 focus-within:ring-inset focus-within:ring-blue-500"
+            >
+                <div>
+                    <span
+                        :class="[
+                            'text-yellow-50',
+                            'text-yellow-700',
+                            'rounded-lg inline-flex p-3 ring-4 ring-white',
+                        ]"
+                    >
+                        <component
+                            :is="CashIcon"
+                            class="h-6 w-6"
+                            aria-hidden="true"
+                        />
+                    </span>
+                </div>
+                <div class="mt-8">
+                    <h3 class="text-lg font-medium">
+                        <div class="focus:outline-none">
+                            <!-- Extend touch target to entire panel -->
+                            <span class="absolute inset-0" aria-hidden="true" />
+                            <n-alert :show-icon="false">
+                                This is just a placeholder.<br>
+                                This is just a placeholder.
+                            </n-alert>
+                        </div>
+                    </h3>
+                </div>
+            </div>
+        </div>
+
         <beautiful-chat
             :participants="participants"
             :titleImageUrl="titleImageUrl"
@@ -152,17 +136,45 @@
 </template>
 
 <script>
-import { defineComponent } from "vue";
+import { defineComponent, ref } from "vue";
+import monthly_costs from "./data/monthly_costs.json";
+import { CashIcon } from "@heroicons/vue/outline";
+import { NAlert } from "naive-ui";
+
+const actions = [
+    {
+        title: "Mesečna poraba",
+        href: "#",
+        icon: CashIcon,
+        iconForeground: "text-emerald-700",
+        iconBackground: "bg-emerald-50",
+    },
+    {
+        title: "Poraba po kategorijah",
+        href: "#",
+        icon: CashIcon,
+        iconForeground: "text-yellow-700",
+        iconBackground: "bg-yellow-50",
+    },
+];
 
 export default defineComponent({
     data() {
         return {
+            monthly_costs: monthly_costs.map((d) => new Date(d)),
+            prettify: function (ts) {
+                return new Date(ts).toLocaleDateString("en", {
+                    year: "numeric",
+                    month: "short",
+                    day: "numeric",
+                });
+            },
             participants: [
                 {
                     id: "user1",
-                    name: "AI Stane",
+                    name: "AI finbit",
                     imageUrl:
-                        "https://www.dropbox.com/s/6ggs6yqmcwcx4i6/stane-logo.jpeg?raw=1",
+                        "https://www.dropbox.com/s/6ggs6yqmcwcx4i6/finbit-logo.jpeg?raw=1",
                 },
             ], // the list of all the participant of the conversation. `name` is the user name, `id` is used to establish the author of a message, `imageUrl` is supposed to be the user avatar.
             titleImageUrl:
@@ -260,159 +272,16 @@ export default defineComponent({
             m.data.text = message.data.text;
         },
     },
+    components: {
+        CashIcon,
+        NAlert
+    },
     setup() {
-        return {};
+        
     },
 });
 </script>
 
 <style scoped>
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap");
 
-.cost-graph {
-    font-family: "Roboto", sans-serif;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-}
-
-.main-container {
-    background: #dbeafe;
-    color: #3b82f6;
-    border-radius: 5px;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-top: 50px;
-    padding-bottom: 50px;
-    width: 100%;
-    height: 100%;
-    box-sizing: border-box;
-}
-
-.year-stats {
-    white-space: nowrap;
-    max-height: 170px;
-    overflow: hidden;
-}
-
-.year-stats:hover {
-    overflow-x: auto;
-}
-
-/* SCROLL BAR STYLE (ONLY WORKS IN CHROME) */
-/* Width */
-::-webkit-scrollbar {
-    height: 5px;
-    width: 100%;
-}
-
-/* Track */
-::-webkit-scrollbar-track {
-    background: #dbeafe;
-}
-
-/* Handle */
-::-webkit-scrollbar-thumb {
-    background: #3b82f6;
-    border-radius: 10px;
-}
-
-::-webkit-scrollbar-thumb {
-    background: #1e3a8a;
-}
-
-.month-group {
-    cursor: pointer;
-    max-width: 400px;
-    height: 110px;
-    margin: 10px;
-    display: inline-block;
-}
-
-.bar {
-    background-color: #3b82f6;
-    width: 20px;
-    border-radius: 5px;
-    margin-bottom: 10px;
-}
-
-.month-group:hover .bar,
-.selected .bar {
-    background: #1e3a8a;
-}
-
-.month-group:hover p,
-.selected p {
-    color: #1e3a8a;
-}
-
-.h-25 {
-    height: 25%;
-}
-.h-50 {
-    height: 50%;
-}
-.h-75 {
-    height: 75%;
-}
-.h-100 {
-    height: 100%;
-}
-
-.stats-info {
-    margin-top: 15px;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    position: relative;
-}
-
-.graph-container {
-    position: relative;
-}
-
-.percent {
-    display: block;
-    width: 120px;
-    height: 120px;
-}
-
-.circle {
-    stroke: #915db1;
-    fill: none;
-    stroke-width: 3;
-}
-
-.circle:nth-child(2) {
-    stroke: #e59f3c;
-}
-
-.circle:nth-child(3) {
-    stroke: #5397d6;
-}
-
-.circle:nth-child(4) {
-    stroke: #4cc790;
-}
-
-.graph-container p {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 12px;
-    color: #1e3a8a;
-    text-align: center;
-}
-
-.info p {
-    margin-bottom: 10px;
-}
-
-.info span {
-    color: #1e3a8a;
-}
 </style>

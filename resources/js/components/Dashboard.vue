@@ -47,9 +47,9 @@ export default defineComponent({
             participants: [
                 {
                     id: "user1",
-                    name: "AI Stane",
+                    name: "AI finbit",
                     imageUrl:
-                        "https://www.dropbox.com/s/6ggs6yqmcwcx4i6/stane-logo.jpeg?raw=1",
+                        "https://www.dropbox.com/s/6ggs6yqmcwcx4i6/finbit-logo.jpeg?raw=1",
                 },
             ], // the list of all the participant of the conversation. `name` is the user name, `id` is used to establish the author of a message, `imageUrl` is supposed to be the user avatar.
             titleImageUrl:

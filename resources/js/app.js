@@ -24,6 +24,8 @@ import StepFour from './components/loans/StepFour'
 import StepFive from './components/loans/StepFive'
 import Calendar from './components/Calendar'
 import Wallet from './components/Wallet'
+import HistogramSlider from "vue3-histogram-slider";
+import "vue3-histogram-slider/dist/histogram-slider.css";
 
 createApp({
     components: {
@@ -50,4 +52,5 @@ createApp({
 .use(Chat)
 .use(RadialProgressBar)
 .use(VueApexCharts)
+.component(HistogramSlider.name, HistogramSlider)
 .mount('#app')
