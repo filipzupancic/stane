@@ -4,11 +4,24 @@
             <div
                 class="max-w-7xl mx-auto text-center py-12 px-4 sm:px-6 lg:py-16 lg:px-8"
             >
-                <h2
-                    class="text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl"
-                >
-                    <span class="block">Znižaj stroške</span>
-                </h2>
+                <div class="py-12 bg-white">
+                    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                        <div class="text-center">
+                            <p
+                                class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl"
+                            >
+                                Prihrani s finbit-om.
+                            </p>
+                            <p
+                                class="mt-4 max-w-2xl text-xl text-gray-500 lg:mx-auto"
+                            >
+                                Glede na to, kako pomembno ti je, da si znižaš
+                                stroške, bo finbit prilagodil nasvete, kje in
+                                kako lahko prihraniš.
+                            </p>
+                        </div>
+                    </div>
+                </div>
                 <div class="mt-8 flex justify-center">
                     <div class="inline-flex rounded-md shadow">
                         <a
@@ -30,28 +43,6 @@
             </div>
         </div>
 
-        <div class="relative">
-            <div class="absolute inset-0 flex items-center" aria-hidden="true">
-                <div class="w-full border-t border-gray-300" />
-            </div>
-        </div>
-
-        <div class="py-12 bg-white">
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="text-center">
-                    <p
-                        class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl"
-                    >
-                        Prihrani s finbit-om.
-                    </p>
-                    <p class="mt-4 max-w-2xl text-xl text-gray-500 lg:mx-auto">
-                        Glede na to, kako pomembno ti je, da si znižaš stroške,
-                        bo finbit prilagodil nasvete, kje in kako lahko
-                        prihraniš.
-                    </p>
-                </div>
-            </div>
-        </div>
         <div class="app__content">
             <div class="content__radial">
                 <GradientProgress

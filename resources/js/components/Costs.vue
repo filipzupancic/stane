@@ -58,18 +58,14 @@
                         <div class="focus:outline-none">
                             <!-- Extend touch target to entire panel -->
                             <span class="absolute inset-0" aria-hidden="true" />
-                            <HistogramSlider
-                                style="margin: 0px auto"
-                                :width="300"
-                                :bar-height="100"
-                                :data="monthly_costs"
-                                :prettify="prettify"
-                                :drag-interval="true"
-                                :force-edges="false"
-                                :colors="['#4facfe', '#00f2fe']"
-                                :min="new Date(2004, 11, 24).valueOf()"
-                                :max="new Date(2017, 11, 24).valueOf()"
-                            />
+                            <div id="chart">
+                                <apexchart
+                                    type="bar"
+                                    height="350"
+                                    :options="chartOptionsBar"
+                                    :series="seriesBar"
+                                ></apexchart>
+                            </div>
                         </div>
                     </h3>
                 </div>
@@ -97,10 +93,13 @@
                         <div class="focus:outline-none">
                             <!-- Extend touch target to entire panel -->
                             <span class="absolute inset-0" aria-hidden="true" />
-                            <n-alert :show-icon="false">
-                                This is just a placeholder.<br>
-                                This is just a placeholder.
-                            </n-alert>
+                            <div id="chart">
+                                <apexchart
+                                    type="donut"
+                                    :options="chartOptions"
+                                    :series="series"
+                                ></apexchart>
+                            </div>
                         </div>
                     </h3>
                 </div>
@@ -161,6 +160,69 @@ const actions = [
 export default defineComponent({
     data() {
         return {
+            seriesBar: [
+                {
+                    data: [1400, 1580, 1000, 1470, 1540, 1280, 1690, 550],
+                },
+            ],
+            chartOptionsBar: {
+                chart: {
+                    type: "bar",
+                    height: 350,
+                },
+                plotOptions: {
+                    bar: {
+                        borderRadius: 4,
+                        horizontal: false,
+                    },
+                },
+                dataLabels: {
+                    enabled: false,
+                },
+                xaxis: {
+                    categories: [
+                        "Okt 21",
+                        "Nov 21",
+                        "Dec 21",
+                        "Jan 22",
+                        "Feb 22",
+                        "Marec 22",
+                        "April 22",
+                        "Maj 22",
+                    ],
+                },
+            },
+            series: [44, 55, 41, 17, 15],
+            chartOptions: {
+                chart: {
+                    type: "donut",
+                },
+                labels: [
+                    "Avto",
+                    "Hiša",
+                    "Živila",
+                    "Potovanje",
+                    "Ostalo",
+                ],
+                theme: {
+                    monochrome: {
+                        enabled: true,
+                    },
+                },
+                responsive: [
+                    {
+                        breakpoint: 480,
+                        options: {
+                            chart: {
+                                width: 200,
+                            },
+                            legend: {
+                                position: "bottom",
+                            },
+                        },
+                    },
+                ],
+            },
             monthly_costs: monthly_costs.map((d) => new Date(d)),
             prettify: function (ts) {
                 return new Date(ts).toLocaleDateString("en", {
@@ -274,14 +336,10 @@ export default defineComponent({
     },
     components: {
         CashIcon,
-        NAlert
+        NAlert,
     },
-    setup() {
-        
-    },
+    setup() {},
 });
 </script>
 
-<style scoped>
-
-</style>
+<style scoped></style>

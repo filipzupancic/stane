@@ -1,6 +1,6 @@
 <template>
     <div>
-        <div class="max-w-7xl mx-auto pt-16 pb-8 px-4 sm:py-24 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto pt-16 px-4 sm:py-16 sm:px-6 lg:px-8">
             <div class="text-center radial-progress">
                 <p
                     class="mt-1 text-4xl font-extrabold text-gray-900 sm:text-5xl sm:tracking-tight lg:text-6xl"
@@ -12,80 +12,134 @@
                 </p>
             </div>
         </div>
-
-        <div class="relative">
-            <div class="absolute inset-0 flex items-center" aria-hidden="true">
-                <div class="w-full border-t border-gray-300" />
+        <div class="lg:grid lg:grid-cols-2 py-16 lg:gap-x-6 xl:gap-x-8">
+            <div class="bg-gray-100 rounded-lg p-6 flex items-center sm:p-10">
+                <div class="max-w-sm mx-auto text-center">
+                    <h3 class="font-semibold text-lg text-gray-900">Tvoja sredstva</h3>
+                    <p class="mt-6 text-2xl text-emerald-500">2,000,000,00 €</p>
+                </div>
             </div>
-        </div>
 
-        <div class="bg-gray-50 pt-12 sm:pt-16">
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="max-w-4xl mx-auto text-center">
-                    <p class="mt-3 text-2xl text-gray-900 sm:mt-4">
-                        Uživaj življenje in skrb za finance prepusti nam.
+            <div
+                class="mt-6 relative py-12 px-6 flex items-center sm:py-16 sm:px-10 lg:mt-0"
+            >
+                <div class="absolute inset-0 rounded-lg overflow-hidden">
+                    <img
+                        src="https://tailwindui.com/img/ecommerce-images/footer-02-exclusive-sale.jpg"
+                        alt=""
+                        class="w-full h-full filter saturate-0 object-center object-cover"
+                    />
+                    <div class="absolute inset-0 bg-blue-600 bg-opacity-90" />
+                </div>
+                <div class="relative max-w-sm mx-auto text-center">
+                    <h3
+                        class="text-2xl font-extrabold tracking-tight text-white"
+                    >
+                        Finance na enem mestu
+                    </h3>
+                    <p class="mt-2 text-gray-200">
+                        Preprosto poveži svoje račune in ostalo prepusti nam.
+                        <a
+                            href="/denarnica"
+                            class="font-bold text-white whitespace-nowrap hover:text-gray-200"
+                            >Poveži račune.<span aria-hidden="true">
+                                &rarr;</span
+                            ></a
+                        >
                     </p>
                 </div>
             </div>
-            <div class="mt-10 pb-12 bg-white sm:pb-16">
-                <div class="relative">
-                    <div class="absolute inset-0 h-1/2 bg-gray-50" />
+        </div>
+        <div class="relative bg-white py-16 sm:py-12 lg:py-16 border-solid border-2 border-blue-600">
+            <div
+                class="mx-auto max-w-md px-4 text-center sm:max-w-3xl sm:px-6 lg:max-w-7xl lg:px-8"
+            >
+                <div class="mt-12">
                     <div
-                        class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"
+                        class="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3"
                     >
-                        <div class="max-w-4xl mx-auto">
-                            <dl
-                                class="rounded-lg bg-white shadow-lg sm:grid sm:grid-cols-3"
-                            >
-                                <div
-                                    class="flex flex-col border-b border-gray-100 p-6 text-center sm:border-0 sm:border-r"
-                                >
-                                    <n-space vertical>
-                                        <n-slider
-                                            v-model:value="value"
-                                            :marks="stroski"
-                                            step="mark"
-                                        />
-                                    </n-space>
-                                    <dd
-                                        class="order-1 text-md font-extrabold text-emerald-600 py-4"
+                        <div class="flow-root rounded-lg bg-gray-50 px-6 pb-8">
+                            <div class="-mt-6">
+                                <div>
+                                    <span
+                                        class="inline-flex items-center justify-center rounded-md bg-yellow-500 p-3 shadow-lg"
                                     >
-                                        STROŠKI
-                                    </dd>
-                                </div>
-                                <div
-                                    class="flex flex-col border-t border-b border-gray-100 p-6 text-center sm:border-0 sm:border-l sm:border-r"
-                                >
-                                    <n-space vertical>
-                                        <n-slider
-                                            v-model:value="value"
-                                            :marks="eko"
-                                            step="mark"
+                                        <component
+                                            :is="CashIcon"
+                                            class="h-6 w-6 text-white"
+                                            aria-hidden="true"
                                         />
-                                    </n-space>
-                                    <dd
-                                        class="order-1 text-md font-extrabold text-emerald-600 py-4"
-                                    >
-                                        EKO
-                                    </dd>
+                                    </span>
                                 </div>
-                                <div
-                                    class="flex flex-col border-t border-gray-100 p-6 text-center sm:border-0 sm:border-l"
+                                <h3
+                                    class="mt-8 text-lg font-medium tracking-tight text-gray-900"
                                 >
-                                    <n-space vertical>
-                                        <n-slider
-                                            v-model:value="value"
-                                            :marks="invest"
-                                            step="mark"
-                                        />
-                                    </n-space>
-                                    <dd
-                                        class="order-1 text-md font-extrabold text-emerald-600 py-4"
+                                    STROŠKI
+                                </h3>
+                                <n-space vertical>
+                                    <n-slider
+                                        v-model:value="value"
+                                        :marks="stroski"
+                                        step="mark"
+                                    />
+                                </n-space>
+                            </div>
+                        </div>
+
+                        <div class="flow-root rounded-lg bg-gray-50 px-6 pb-8">
+                            <div class="-mt-6">
+                                <div>
+                                    <span
+                                        class="inline-flex items-center justify-center rounded-md bg-emerald-500 p-3 shadow-lg"
                                     >
-                                        INVESTICIJE
-                                    </dd>
+                                        <component
+                                            :is="GlobeIcon"
+                                            class="h-6 w-6 text-white"
+                                            aria-hidden="true"
+                                        />
+                                    </span>
                                 </div>
-                            </dl>
+                                <h3
+                                    class="mt-8 text-lg font-medium tracking-tight text-gray-900"
+                                >
+                                    EKO
+                                </h3>
+                                <n-space vertical>
+                                    <n-slider
+                                        v-model:value="value"
+                                        :marks="eko"
+                                        step="mark"
+                                    />
+                                </n-space>
+                            </div>
+                        </div>
+
+                        <div class="flow-root rounded-lg bg-gray-50 px-6 pb-8">
+                            <div class="-mt-6">
+                                <div>
+                                    <span
+                                        class="inline-flex items-center justify-center rounded-md bg-blue-500 p-3 shadow-lg"
+                                    >
+                                        <component
+                                            :is="BadgeCheckIcon"
+                                            class="h-6 w-6 text-white"
+                                            aria-hidden="true"
+                                        />
+                                    </span>
+                                </div>
+                                <h3
+                                    class="mt-8 text-lg font-medium tracking-tight text-gray-900"
+                                >
+                                    INVESTICIJE
+                                </h3>
+                                <n-space vertical>
+                                    <n-slider
+                                        v-model:value="value"
+                                        :marks="invest"
+                                        step="mark"
+                                    />
+                                </n-space>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -93,7 +147,7 @@
         </div>
 
         <div
-            class="rounded-lg bg-gray-200 overflow-hidden shadow divide-y divide-gray-200 sm:divide-y-0 sm:grid sm:grid-cols-2 sm:gap-px"
+            class="rounded-lg bg-gray-200 overflow-hidden shadow divide-y divide-gray-200 sm:divide-y-0 sm:grid sm:grid-cols-2 sm:gap-px my-16"
         >
             <div
                 v-for="(action, actionIdx) in actions"
@@ -187,11 +241,9 @@
 import { ref, defineComponent } from "vue";
 import { NSpace, NSlider } from "naive-ui";
 import {
-    AcademicCapIcon,
     BadgeCheckIcon,
     CashIcon,
     ClockIcon,
-    ReceiptRefundIcon,
     UsersIcon,
     GlobeIcon,
     DocumentTextIcon,
@@ -362,6 +414,9 @@ export default defineComponent({
     components: {
         NSpace,
         NSlider,
+        CashIcon,
+        GlobeIcon,
+        BadgeCheckIcon,
     },
     setup() {
         const completedSteps = ref(0);
