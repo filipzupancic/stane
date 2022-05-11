@@ -30,7 +30,7 @@
 @include('layouts.navigation')
 
 <body class="font-sans antialiased">
-    <div class="min-h-screen" id="app">
+    <div class="min-h-screen">
         <!-- Page Heading -->
         <header>
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

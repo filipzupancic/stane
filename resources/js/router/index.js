@@ -11,7 +11,7 @@ import Notifications from '../components/Notifications'
 import Documents from '../components/Documents'
 import AddDocument from '../components/documents/AddDocument'
 import EditDocument from '../components/documents/EditDocument'
-import StepOne from '../components/loans/StepOne'
+import LoanSteps from '../components/loans/LoanSteps'
 import StepTwo from '../components/loans/StepTwo'
 import StepThree from '../components/loans/StepThree'
 import StepFour from '../components/loans/StepFour'
@@ -78,7 +78,7 @@ const routes = [
     {
         path: '/kredit/prvi-korak',
         name: 'step-one',
-        component: StepOne
+        component: LoanSteps
     },
     {
         path: '/kredit/drugi-korak',

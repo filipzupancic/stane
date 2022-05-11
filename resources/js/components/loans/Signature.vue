@@ -1,37 +1,30 @@
 <template>
-        <beautiful-chat
-            :participants="participants"
-            :titleImageUrl="titleImageUrl"
-            :onMessageWasSent="onMessageWasSent"
-            :messageList="messageList"
-            :newMessagesCount="newMessagesCount"
-            :isOpen="isChatOpen"
-            :close="closeChat"
-            :icons="icons"
-            :open="openChat"
-            :showEmoji="true"
-            :showFile="true"
-            :showEdition="true"
-            :showDeletion="true"
-            :deletionConfirmation="true"
-            :showTypingIndicator="showTypingIndicator"
-            :showLauncher="true"
-            :showCloseButton="true"
-            :colors="colors"
-            :alwaysScrollToBottom="alwaysScrollToBottom"
-            :disableUserListToggle="false"
-            :messageStyling="messageStyling"
-            @onType="handleOnType"
-            @edit="editMessage"
-        />
+    <div class="items-center text-center">
+    
+  BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
+
+    </div>
 </template>
 
 <script>
-import { defineComponent, onMounted } from "vue";
+import { ref, defineComponent } from "vue";
+import { CheckIcon } from "@heroicons/vue/solid";
+import { ChevronRightIcon, HomeIcon } from '@heroicons/vue/solid'
 
+const pages = [
+  { name: 'kredit', href: '/kredit', current: false },
+  { name: 'prvi korak', href: '/kredit/prvi-korak', current: true },
+];
+
+const steps = [
+    { name: "Step 1", href: "/kredit/prvi-korak", status: "current" },
+    { name: "Step 2", href: "/kredit/drugi-korak", status: "upcoming" },
+    { name: "Step 3", href: "/kredit/tretji-korak", status: "upcoming" },
+    { name: "Step 4", href: "/kredit/cetrti-korak", status: "upcoming" },
+    { name: "Step 5", href: "/kredit/peti-korak", status: "upcoming" },
+];
 
 export default defineComponent({
-    
     data() {
         return {
             participants: [
@@ -49,7 +42,7 @@ export default defineComponent({
                     type: "text",
                     author: `user1`,
                     data: {
-                        text: `Živjo Bogdan, kako ti lahko pomagam?`,
+                        text: `Hej Mojca, kako ti lahko pomagam?`,
                     },
                 },
                 {
@@ -63,7 +56,7 @@ export default defineComponent({
                     type: "text",
                     author: `user1`,
                     data: {
-                        text: `Ni problema, tvoje zanimanje bomo posredovali izbranim bankam in v kratkem boš dobil odgovor.`,
+                        text: `Ni problema, tvoje zanimanje bomo posredovali izbranim bankam in v kratkem boš dobila odgovor.`,
                     },
                 },
             ], // the list of the messages to show, can be paginated and adjusted dynamically
@@ -96,6 +89,7 @@ export default defineComponent({
             }, // specifies the color scheme for the component
             alwaysScrollToBottom: false, // when set to true always scrolls the chat to the bottom when new events are in (new message, user starts typing...)
             messageStyling: true, // enables *bold* /emph/ _underline_ and such (more info at github.com/mattezza/msgdown)
+            percentage: 50,
         };
     },
     methods: {
@@ -138,10 +132,37 @@ export default defineComponent({
         },
     },
     components: {
+        CheckIcon,
+        ChevronRightIcon,
+        HomeIcon,
     },
     setup() {
+        const completedSteps = ref(0);
+        const totalSteps = ref(10);
+
         return {
+            completedSteps,
+            totalSteps,
+            steps,
+            pages,
         };
     },
 });
 </script>
+
+<style scoped>
+.radial-progress {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.draw_circle {
+    width: 140px;
+    height: 140px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    border-radius: 25px;
+    background: red;
+}
+</style>

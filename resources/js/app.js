@@ -4,8 +4,8 @@ require('alpinejs');
 
 import { h, createApp, Vue } from "vue"
 import App from './components/App'
-import RadialProgressBar from "vue3-radial-progress"
 import Chat from "vue3-beautiful-chat"
+import RadialProgressBar from "vue3-radial-progress"
 import VueApexCharts from "vue3-apexcharts"
 import router from './router'
 import Loans from './components/Loans'
@@ -18,14 +18,10 @@ import Dashboard from './components/Dashboard'
 import Home from './components/Home'
 import Notifications from './components/Notifications'
 import Documents from './components/Documents'
-import StepOne from './components/loans/StepOne'
-import StepTwo from './components/loans/StepTwo'
-import StepThree from './components/loans/StepThree'
-import StepFour from './components/loans/StepFour'
-import StepFive from './components/loans/StepFive'
 import Calendar from './components/Calendar'
 import Wallet from './components/Wallet'
 import HistogramSlider from "vue3-histogram-slider";
+import LoanSteps from "./components/loans/LoanSteps"
 import "vue3-histogram-slider/dist/histogram-slider.css";
 
 createApp({
@@ -34,6 +30,7 @@ createApp({
     ),
     components: {
         Loans,
+        LoanSteps,
         Costs,
         Co2, 
         Investments,
@@ -43,11 +40,6 @@ createApp({
         Documents,
         Co2Action,
         Costs2Action,
-        StepOne,
-        StepTwo,
-        StepThree,
-        StepFour,
-        StepFive,
         Calendar,
         Wallet,
     },
