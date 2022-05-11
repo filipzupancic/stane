@@ -2,7 +2,8 @@ require('./bootstrap');
 
 require('alpinejs');
 
-import { createApp, Vue } from "vue"
+import { h, createApp, Vue } from "vue"
+import App from './components/App'
 import RadialProgressBar from "vue3-radial-progress"
 import Chat from "vue3-beautiful-chat"
 import VueApexCharts from "vue3-apexcharts"
@@ -28,6 +29,9 @@ import HistogramSlider from "vue3-histogram-slider";
 import "vue3-histogram-slider/dist/histogram-slider.css";
 
 createApp({
+    render: () => (
+      h(App)
+    ),
     components: {
         Loans,
         Costs,
@@ -46,7 +50,7 @@ createApp({
         StepFive,
         Calendar,
         Wallet,
-    }
+    },
 })
 .use(router)
 .use(Chat)

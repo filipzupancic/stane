@@ -24912,6 +24912,30 @@ module.exports = {
 
 /***/ }),
 
+/***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/components/App.vue?vue&type=script&lang=js":
+/*!*********************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/components/App.vue?vue&type=script&lang=js ***!
+  \*********************************************************************************************************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ((0,vue__WEBPACK_IMPORTED_MODULE_0__.defineComponent)({
+  data: function data() {
+    return {};
+  },
+  setup: function setup() {
+    return {};
+  }
+}));
+
+/***/ }),
+
 /***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/components/Calendar.vue?vue&type=script&lang=js":
 /*!**************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/components/Calendar.vue?vue&type=script&lang=js ***!
@@ -28079,6 +28103,30 @@ var steps = [{
 
 /***/ }),
 
+/***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/components/App.vue?vue&type=template&id=332fccf4":
+/*!*************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/components/App.vue?vue&type=template&id=332fccf4 ***!
+  \*************************************************************************************************************************************************************************************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "render": () => (/* binding */ render)
+/* harmony export */ });
+/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
+
+var _hoisted_1 = {
+  "class": "container"
+};
+function render(_ctx, _cache, $props, $setup, $data, $options) {
+  var _component_router_view = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("router-view");
+
+  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_1, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_router_view)]);
+}
+
+/***/ }),
+
 /***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/components/Calendar.vue?vue&type=template&id=052a41a9":
 /*!******************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/components/Calendar.vue?vue&type=template&id=052a41a9 ***!
@@ -28439,7 +28487,7 @@ var _hoisted_1 = {
   "class": "bg-white"
 };
 
-var _hoisted_2 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<div data-v-8b69c97e><div class=\"max-w-7xl mx-auto text-center py-12 px-4 sm:px-6 lg:py-16 lg:px-8\" data-v-8b69c97e><h2 class=\"text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl\" data-v-8b69c97e><span class=\"block\" data-v-8b69c97e>Zmanjšaj svoj ogljični odtis</span></h2><div class=\"mt-8 flex justify-center\" data-v-8b69c97e><div class=\"inline-flex rounded-md shadow\" data-v-8b69c97e><a href=\"/eko\" class=\"inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-emerald-600 hover:bg-emerald-700\" data-v-8b69c97e> Ogljični odtis </a></div><div class=\"ml-3 inline-flex\" data-v-8b69c97e><a href=\"/eko-akcija\" class=\"inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-emerald-700 bg-emerald-100 hover:bg-emerald-200\" data-v-8b69c97e> Stopi v akcijo </a></div></div></div><!--\n            &lt;dl class=&quot;mt-5 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3&quot;&gt;\n                &lt;vue-flip active-click=&quot;&quot; class=&quot;relative bg-white py-5 px-4 sm:pt-6 sm:px-6 shadow rounded-lg overflow-hidden center&quot; align-items=&quot;center&quot; justify-content=&quot;center&quot;&gt;\n                    &lt;template v-slot:front &gt;\n                       &lt;dd class=&quot;ml-16 pb-6 flex items-baseline sm:pb-7&quot;&gt;\n                            &lt;p class=&quot;text-2xl font-semibold text-gray-900&quot;&gt;DONIRAJ&lt;/p&gt;\n                        &lt;/dd&gt;\n                    &lt;/template&gt;\n                    &lt;template v-slot:back align-items=&quot;center&quot; justify-content=&quot;center&quot;&gt;\n                        &lt;p class=&quot;text-2xl font-semibold text-gray-900&quot;&gt;Organizacije:\n                        &lt;/p&gt;\n                    &lt;/template&gt;\n                &lt;/vue-flip&gt;\n                &lt;vue-flip active-click=&quot;&quot; class=&quot;relative bg-white py-5 px-4 sm:pt-6 sm:px-6 shadow rounded-lg overflow-hidden center&quot;&gt;\n                    &lt;template v-slot:front align-items=&quot;center&quot; justify-content=&quot;center&quot;&gt;\n                       Doniraj1\n                    &lt;/template&gt;\n                    &lt;template v-slot:back align-items=&quot;center&quot; justify-content=&quot;center&quot;&gt;\n                        Opcije doniranja\n                    &lt;/template&gt;\n                &lt;/vue-flip&gt;\n                &lt;vue-flip active-click=&quot;&quot; class=&quot;relative bg-white py-5 px-4 sm:pt-6 sm:px-6 shadow rounded-lg overflow-hidden center&quot;&gt;\n                    &lt;template v-slot:front align-items=&quot;center&quot; justify-content=&quot;center&quot;&gt;\n                       Doniraj2\n                    &lt;/template&gt;\n                    &lt;template v-slot:back align-items=&quot;center&quot; justify-content=&quot;center&quot;&gt;\n                        Opcije doniranja\n                    &lt;/template&gt;\n                &lt;/vue-flip&gt;\n            &lt;/dl&gt;\n            --></div><div class=\"lg:grid-cols-3\" data-v-8b69c97e><section class=\"section-tours\" data-v-8b69c97e><div class=\"row\" data-v-8b69c97e><div class=\"col-lg-4 mb-4\" data-v-8b69c97e><div class=\"my-flip-container\" data-v-8b69c97e><div class=\"my-flip-inner my-flip-right\" data-v-8b69c97e><div class=\"my-flip-inner-wrapper\" data-v-8b69c97e><div class=\"my-flip-side my-flip-front\" data-v-8b69c97e><div class=\"my-flip-image my-flip-image--1\" data-v-8b69c97e><img src=\"https://therichpost.com/wp-content/uploads/2021/04/flip-1.jpg\" data-v-8b69c97e></div><div class=\"my-flip-details\" data-v-8b69c97e><h4 class=\"my-flip-heading\" data-v-8b69c97e>Eko mesečni izziv</h4><div class=\"my-flip-text\" data-v-8b69c97e><p data-v-8b69c97e>Na drugi strani kartice imaš predlaganih 5 izzivo, ki jih lahko opraviš v naslednjem mesecu in na ta način zmanjšaš svoj ogličnji odtis. Pa veliko sreče pri opravljanju.</p></div></div></div><div class=\"my-flip-side my-flip-back my-flip-back-1\" data-v-8b69c97e><div class=\"my-flip-back-inner\" data-v-8b69c97e><div class=\"my-flip-price\" data-v-8b69c97e><h3 data-v-8b69c97e>Izzivi</h3></div><div class=\"my-flip-back-text\" data-v-8b69c97e><ul data-v-8b69c97e><li data-v-8b69c97e>En mesec brez mesa</li><li data-v-8b69c97e>2x na teden grem v službo s kolesom</li><li data-v-8b69c97e>En mesec bom v trgovini uporabljal le svoje vrečke</li><li data-v-8b69c97e>Ugašal bom luči, ko le teh ne potrebujem</li><li data-v-8b69c97e>Postavil bom svojo sončno elektrarno</li></ul></div></div></div></div></div></div></div><div class=\"col-lg-4 mb-4\" data-v-8b69c97e><div class=\"my-flip-container\" data-v-8b69c97e><div class=\"my-flip-inner my-flip-right\" data-v-8b69c97e><div class=\"my-flip-inner-wrapper\" data-v-8b69c97e><div class=\"my-flip-side my-flip-front\" data-v-8b69c97e><div class=\"my-flip-image my-flip-image--2\" data-v-8b69c97e><img src=\"https://therichpost.com/wp-content/uploads/2021/04/flip-2.jpg\" data-v-8b69c97e></div><div class=\"my-flip-details\" data-v-8b69c97e><h4 class=\"my-flip-heading\" data-v-8b69c97e>Doniraj</h4><div class=\"my-flip-text\" data-v-8b69c97e><p data-v-8b69c97e>Na tej kartici imaš predlagana društva, katerim z donacijo zmanjšaš svoj ogličnji odtis</p></div></div></div><div class=\"my-flip-side my-flip-back my-flip-back-2\" data-v-8b69c97e><div class=\"my-flip-back-inner\" data-v-8b69c97e><div class=\"my-flip-price\" data-v-8b69c97e><h3 data-v-8b69c97e>Donacije</h3></div><div class=\"my-flip-back-text\" data-v-8b69c97e><ul data-v-8b69c97e><li data-v-8b69c97e>Posadi drevo</li><li data-v-8b69c97e>Očisti plažo</li><li data-v-8b69c97e>Očisti ocean</li><li data-v-8b69c97e>Zasadi gozd</li><li data-v-8b69c97e>Posadi medene rastline</li></ul></div><!--&lt;div class=&quot;my-flip-btn-box&quot;&gt;&lt;a href=&quot;#0&quot; class=&quot;my-flip-btn&quot;&gt;Book Now&lt;/a&gt;&lt;/div&gt;--></div></div></div></div></div></div></div></section></div>", 2);
+var _hoisted_2 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<div data-v-8b69c97e><div class=\"max-w-7xl mx-auto text-center py-12 px-4 sm:px-6 lg:py-16 lg:px-8\" data-v-8b69c97e><h2 class=\"text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl\" data-v-8b69c97e><span class=\"block\" data-v-8b69c97e>Zmanjšaj svoj ogljični odtis</span></h2><div class=\"mt-8 flex justify-center\" data-v-8b69c97e><div class=\"inline-flex rounded-md shadow\" data-v-8b69c97e><a href=\"/eko\" class=\"inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-emerald-600 hover:bg-emerald-700\" data-v-8b69c97e> Ogljični odtis </a></div><div class=\"ml-3 inline-flex\" data-v-8b69c97e><a href=\"/eko-akcija\" class=\"inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-emerald-700 bg-emerald-100 hover:bg-emerald-200\" data-v-8b69c97e> Stopi v akcijo </a></div></div></div><!--\r\n            &lt;dl class=&quot;mt-5 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3&quot;&gt;\r\n                &lt;vue-flip active-click=&quot;&quot; class=&quot;relative bg-white py-5 px-4 sm:pt-6 sm:px-6 shadow rounded-lg overflow-hidden center&quot; align-items=&quot;center&quot; justify-content=&quot;center&quot;&gt;\r\n                    &lt;template v-slot:front &gt;\r\n                       &lt;dd class=&quot;ml-16 pb-6 flex items-baseline sm:pb-7&quot;&gt;\r\n                            &lt;p class=&quot;text-2xl font-semibold text-gray-900&quot;&gt;DONIRAJ&lt;/p&gt;\r\n                        &lt;/dd&gt;\r\n                    &lt;/template&gt;\r\n                    &lt;template v-slot:back align-items=&quot;center&quot; justify-content=&quot;center&quot;&gt;\r\n                        &lt;p class=&quot;text-2xl font-semibold text-gray-900&quot;&gt;Organizacije:\r\n                        &lt;/p&gt;\r\n                    &lt;/template&gt;\r\n                &lt;/vue-flip&gt;\r\n                &lt;vue-flip active-click=&quot;&quot; class=&quot;relative bg-white py-5 px-4 sm:pt-6 sm:px-6 shadow rounded-lg overflow-hidden center&quot;&gt;\r\n                    &lt;template v-slot:front align-items=&quot;center&quot; justify-content=&quot;center&quot;&gt;\r\n                       Doniraj1\r\n                    &lt;/template&gt;\r\n                    &lt;template v-slot:back align-items=&quot;center&quot; justify-content=&quot;center&quot;&gt;\r\n                        Opcije doniranja\r\n                    &lt;/template&gt;\r\n                &lt;/vue-flip&gt;\r\n                &lt;vue-flip active-click=&quot;&quot; class=&quot;relative bg-white py-5 px-4 sm:pt-6 sm:px-6 shadow rounded-lg overflow-hidden center&quot;&gt;\r\n                    &lt;template v-slot:front align-items=&quot;center&quot; justify-content=&quot;center&quot;&gt;\r\n                       Doniraj2\r\n                    &lt;/template&gt;\r\n                    &lt;template v-slot:back align-items=&quot;center&quot; justify-content=&quot;center&quot;&gt;\r\n                        Opcije doniranja\r\n                    &lt;/template&gt;\r\n                &lt;/vue-flip&gt;\r\n            &lt;/dl&gt;\r\n            --></div><div class=\"mt-5 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3\" data-v-8b69c97e><section class=\"section-tours\" data-v-8b69c97e><div class=\"row\" data-v-8b69c97e><div class=\"col-lg-4 mb-4\" data-v-8b69c97e><div class=\"my-flip-container\" data-v-8b69c97e><div class=\"my-flip-inner my-flip-right\" data-v-8b69c97e><div class=\"my-flip-inner-wrapper\" data-v-8b69c97e><div class=\"my-flip-side my-flip-front\" data-v-8b69c97e><div class=\"my-flip-image my-flip-image--1\" data-v-8b69c97e><img src=\"https://therichpost.com/wp-content/uploads/2021/04/flip-1.jpg\" data-v-8b69c97e></div><div class=\"my-flip-details\" data-v-8b69c97e><h4 class=\"my-flip-heading\" data-v-8b69c97e>Eko mesečni izziv</h4><div class=\"my-flip-text\" data-v-8b69c97e><p data-v-8b69c97e>Na drugi strani kartice imaš predlaganih 5 izzivo, ki jih lahko opraviš v naslednjem mesecu in na ta način zmanjšaš svoj ogličnji odtis. Pa veliko sreče pri opravljanju.</p></div></div></div><div class=\"my-flip-side my-flip-back my-flip-back-1\" data-v-8b69c97e><div class=\"my-flip-back-inner\" data-v-8b69c97e><div class=\"my-flip-price\" data-v-8b69c97e><h3 data-v-8b69c97e>Izzivi</h3></div><div class=\"my-flip-back-text\" data-v-8b69c97e><ul data-v-8b69c97e><li data-v-8b69c97e>En mesec brez mesa</li><li data-v-8b69c97e>2x na teden grem v službo s kolesom</li><li data-v-8b69c97e>En mesec bom v trgovini uporabljal le svoje vrečke</li><li data-v-8b69c97e>Ugašal bom luči, ko le teh ne potrebujem</li><li data-v-8b69c97e>Postavil bom svojo sončno elektrarno</li></ul></div></div></div></div></div></div></div><div class=\"col-lg-4 mb-4\" data-v-8b69c97e><div class=\"my-flip-container\" data-v-8b69c97e><div class=\"my-flip-inner my-flip-right\" data-v-8b69c97e><div class=\"my-flip-inner-wrapper\" data-v-8b69c97e><div class=\"my-flip-side my-flip-front\" data-v-8b69c97e><div class=\"my-flip-image my-flip-image--2\" data-v-8b69c97e><img src=\"https://therichpost.com/wp-content/uploads/2021/04/flip-2.jpg\" data-v-8b69c97e></div><div class=\"my-flip-details\" data-v-8b69c97e><h4 class=\"my-flip-heading\" data-v-8b69c97e>Doniraj</h4><div class=\"my-flip-text\" data-v-8b69c97e><p data-v-8b69c97e>Na tej kartici imaš predlagana društva, katerim z donacijo zmanjšaš svoj ogličnji odtis</p></div></div></div><div class=\"my-flip-side my-flip-back my-flip-back-2\" data-v-8b69c97e><div class=\"my-flip-back-inner\" data-v-8b69c97e><div class=\"my-flip-price\" data-v-8b69c97e><h3 data-v-8b69c97e>Donacije</h3></div><div class=\"my-flip-back-text\" data-v-8b69c97e><ul data-v-8b69c97e><li data-v-8b69c97e>Posadi drevo</li><li data-v-8b69c97e>Očisti plažo</li><li data-v-8b69c97e>Očisti ocean</li><li data-v-8b69c97e>Zasadi gozd</li><li data-v-8b69c97e>Posadi medene rastline</li></ul></div><!--&lt;div class=&quot;my-flip-btn-box&quot;&gt;&lt;a href=&quot;#0&quot; class=&quot;my-flip-btn&quot;&gt;Book Now&lt;/a&gt;&lt;/div&gt;--></div></div></div></div></div></div></div></section></div>", 2);
 
 function render(_ctx, _cache, $props, $setup, $data, $options) {
   var _component_beautiful_chat = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("beautiful-chat");
@@ -30909,31 +30957,32 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
-/* harmony import */ var vue3_radial_progress__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! vue3-radial-progress */ "./node_modules/vue3-radial-progress/dist/RadialProgressBar.esm.js");
-/* harmony import */ var vue3_beautiful_chat__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! vue3-beautiful-chat */ "./node_modules/vue3-beautiful-chat/index.js");
-/* harmony import */ var vue3_apexcharts__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! vue3-apexcharts */ "./node_modules/vue3-apexcharts/dist/vue3-apexcharts.common.js");
-/* harmony import */ var vue3_apexcharts__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(vue3_apexcharts__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _router__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./router */ "./resources/js/router/index.js");
-/* harmony import */ var _components_Loans__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./components/Loans */ "./resources/js/components/Loans.vue");
-/* harmony import */ var _components_Costs__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./components/Costs */ "./resources/js/components/Costs.vue");
-/* harmony import */ var _components_Costs2Action__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./components/Costs2Action */ "./resources/js/components/Costs2Action.vue");
-/* harmony import */ var _components_Co2__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./components/Co2 */ "./resources/js/components/Co2.vue");
-/* harmony import */ var _components_Co2Action__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./components/Co2Action */ "./resources/js/components/Co2Action.vue");
-/* harmony import */ var _components_Investments__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./components/Investments */ "./resources/js/components/Investments.vue");
-/* harmony import */ var _components_Dashboard__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./components/Dashboard */ "./resources/js/components/Dashboard.vue");
-/* harmony import */ var _components_Home__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./components/Home */ "./resources/js/components/Home.vue");
-/* harmony import */ var _components_Notifications__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./components/Notifications */ "./resources/js/components/Notifications.vue");
-/* harmony import */ var _components_Documents__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./components/Documents */ "./resources/js/components/Documents.vue");
-/* harmony import */ var _components_loans_StepOne__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./components/loans/StepOne */ "./resources/js/components/loans/StepOne.vue");
-/* harmony import */ var _components_loans_StepTwo__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./components/loans/StepTwo */ "./resources/js/components/loans/StepTwo.vue");
-/* harmony import */ var _components_loans_StepThree__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./components/loans/StepThree */ "./resources/js/components/loans/StepThree.vue");
-/* harmony import */ var _components_loans_StepFour__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./components/loans/StepFour */ "./resources/js/components/loans/StepFour.vue");
-/* harmony import */ var _components_loans_StepFive__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ./components/loans/StepFive */ "./resources/js/components/loans/StepFive.vue");
-/* harmony import */ var _components_Calendar__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ./components/Calendar */ "./resources/js/components/Calendar.vue");
-/* harmony import */ var _components_Wallet__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ./components/Wallet */ "./resources/js/components/Wallet.vue");
-/* harmony import */ var vue3_histogram_slider__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! vue3-histogram-slider */ "./node_modules/vue3-histogram-slider/dist/histogram-slider.umd.min.js");
-/* harmony import */ var vue3_histogram_slider__WEBPACK_IMPORTED_MODULE_21___default = /*#__PURE__*/__webpack_require__.n(vue3_histogram_slider__WEBPACK_IMPORTED_MODULE_21__);
-/* harmony import */ var vue3_histogram_slider_dist_histogram_slider_css__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! vue3-histogram-slider/dist/histogram-slider.css */ "./node_modules/vue3-histogram-slider/dist/histogram-slider.css");
+/* harmony import */ var _components_App__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./components/App */ "./resources/js/components/App.vue");
+/* harmony import */ var vue3_radial_progress__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(/*! vue3-radial-progress */ "./node_modules/vue3-radial-progress/dist/RadialProgressBar.esm.js");
+/* harmony import */ var vue3_beautiful_chat__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! vue3-beautiful-chat */ "./node_modules/vue3-beautiful-chat/index.js");
+/* harmony import */ var vue3_apexcharts__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! vue3-apexcharts */ "./node_modules/vue3-apexcharts/dist/vue3-apexcharts.common.js");
+/* harmony import */ var vue3_apexcharts__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(vue3_apexcharts__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _router__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./router */ "./resources/js/router/index.js");
+/* harmony import */ var _components_Loans__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./components/Loans */ "./resources/js/components/Loans.vue");
+/* harmony import */ var _components_Costs__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./components/Costs */ "./resources/js/components/Costs.vue");
+/* harmony import */ var _components_Costs2Action__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./components/Costs2Action */ "./resources/js/components/Costs2Action.vue");
+/* harmony import */ var _components_Co2__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./components/Co2 */ "./resources/js/components/Co2.vue");
+/* harmony import */ var _components_Co2Action__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./components/Co2Action */ "./resources/js/components/Co2Action.vue");
+/* harmony import */ var _components_Investments__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./components/Investments */ "./resources/js/components/Investments.vue");
+/* harmony import */ var _components_Dashboard__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./components/Dashboard */ "./resources/js/components/Dashboard.vue");
+/* harmony import */ var _components_Home__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./components/Home */ "./resources/js/components/Home.vue");
+/* harmony import */ var _components_Notifications__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./components/Notifications */ "./resources/js/components/Notifications.vue");
+/* harmony import */ var _components_Documents__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./components/Documents */ "./resources/js/components/Documents.vue");
+/* harmony import */ var _components_loans_StepOne__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./components/loans/StepOne */ "./resources/js/components/loans/StepOne.vue");
+/* harmony import */ var _components_loans_StepTwo__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./components/loans/StepTwo */ "./resources/js/components/loans/StepTwo.vue");
+/* harmony import */ var _components_loans_StepThree__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./components/loans/StepThree */ "./resources/js/components/loans/StepThree.vue");
+/* harmony import */ var _components_loans_StepFour__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ./components/loans/StepFour */ "./resources/js/components/loans/StepFour.vue");
+/* harmony import */ var _components_loans_StepFive__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ./components/loans/StepFive */ "./resources/js/components/loans/StepFive.vue");
+/* harmony import */ var _components_Calendar__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ./components/Calendar */ "./resources/js/components/Calendar.vue");
+/* harmony import */ var _components_Wallet__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! ./components/Wallet */ "./resources/js/components/Wallet.vue");
+/* harmony import */ var vue3_histogram_slider__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! vue3-histogram-slider */ "./node_modules/vue3-histogram-slider/dist/histogram-slider.umd.min.js");
+/* harmony import */ var vue3_histogram_slider__WEBPACK_IMPORTED_MODULE_22___default = /*#__PURE__*/__webpack_require__.n(vue3_histogram_slider__WEBPACK_IMPORTED_MODULE_22__);
+/* harmony import */ var vue3_histogram_slider_dist_histogram_slider_css__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! vue3-histogram-slider/dist/histogram-slider.css */ "./node_modules/vue3-histogram-slider/dist/histogram-slider.css");
 __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
 
 __webpack_require__(/*! alpinejs */ "./node_modules/alpinejs/dist/module.esm.js");
@@ -30962,27 +31011,31 @@ __webpack_require__(/*! alpinejs */ "./node_modules/alpinejs/dist/module.esm.js"
 
 
 
+
 (0,vue__WEBPACK_IMPORTED_MODULE_0__.createApp)({
+  render: function render() {
+    return (0,vue__WEBPACK_IMPORTED_MODULE_0__.h)(_components_App__WEBPACK_IMPORTED_MODULE_1__["default"]);
+  },
   components: {
-    Loans: _components_Loans__WEBPACK_IMPORTED_MODULE_4__["default"],
-    Costs: _components_Costs__WEBPACK_IMPORTED_MODULE_5__["default"],
-    Co2: _components_Co2__WEBPACK_IMPORTED_MODULE_7__["default"],
-    Investments: _components_Investments__WEBPACK_IMPORTED_MODULE_9__["default"],
-    Dashboard: _components_Dashboard__WEBPACK_IMPORTED_MODULE_10__["default"],
-    Home: _components_Home__WEBPACK_IMPORTED_MODULE_11__["default"],
-    Notifications: _components_Notifications__WEBPACK_IMPORTED_MODULE_12__["default"],
-    Documents: _components_Documents__WEBPACK_IMPORTED_MODULE_13__["default"],
-    Co2Action: _components_Co2Action__WEBPACK_IMPORTED_MODULE_8__["default"],
-    Costs2Action: _components_Costs2Action__WEBPACK_IMPORTED_MODULE_6__["default"],
-    StepOne: _components_loans_StepOne__WEBPACK_IMPORTED_MODULE_14__["default"],
-    StepTwo: _components_loans_StepTwo__WEBPACK_IMPORTED_MODULE_15__["default"],
-    StepThree: _components_loans_StepThree__WEBPACK_IMPORTED_MODULE_16__["default"],
-    StepFour: _components_loans_StepFour__WEBPACK_IMPORTED_MODULE_17__["default"],
-    StepFive: _components_loans_StepFive__WEBPACK_IMPORTED_MODULE_18__["default"],
-    Calendar: _components_Calendar__WEBPACK_IMPORTED_MODULE_19__["default"],
-    Wallet: _components_Wallet__WEBPACK_IMPORTED_MODULE_20__["default"]
+    Loans: _components_Loans__WEBPACK_IMPORTED_MODULE_5__["default"],
+    Costs: _components_Costs__WEBPACK_IMPORTED_MODULE_6__["default"],
+    Co2: _components_Co2__WEBPACK_IMPORTED_MODULE_8__["default"],
+    Investments: _components_Investments__WEBPACK_IMPORTED_MODULE_10__["default"],
+    Dashboard: _components_Dashboard__WEBPACK_IMPORTED_MODULE_11__["default"],
+    Home: _components_Home__WEBPACK_IMPORTED_MODULE_12__["default"],
+    Notifications: _components_Notifications__WEBPACK_IMPORTED_MODULE_13__["default"],
+    Documents: _components_Documents__WEBPACK_IMPORTED_MODULE_14__["default"],
+    Co2Action: _components_Co2Action__WEBPACK_IMPORTED_MODULE_9__["default"],
+    Costs2Action: _components_Costs2Action__WEBPACK_IMPORTED_MODULE_7__["default"],
+    StepOne: _components_loans_StepOne__WEBPACK_IMPORTED_MODULE_15__["default"],
+    StepTwo: _components_loans_StepTwo__WEBPACK_IMPORTED_MODULE_16__["default"],
+    StepThree: _components_loans_StepThree__WEBPACK_IMPORTED_MODULE_17__["default"],
+    StepFour: _components_loans_StepFour__WEBPACK_IMPORTED_MODULE_18__["default"],
+    StepFive: _components_loans_StepFive__WEBPACK_IMPORTED_MODULE_19__["default"],
+    Calendar: _components_Calendar__WEBPACK_IMPORTED_MODULE_20__["default"],
+    Wallet: _components_Wallet__WEBPACK_IMPORTED_MODULE_21__["default"]
   }
-}).use(_router__WEBPACK_IMPORTED_MODULE_3__["default"]).use(vue3_beautiful_chat__WEBPACK_IMPORTED_MODULE_1__["default"]).use(vue3_radial_progress__WEBPACK_IMPORTED_MODULE_23__["default"]).use((vue3_apexcharts__WEBPACK_IMPORTED_MODULE_2___default())).component((vue3_histogram_slider__WEBPACK_IMPORTED_MODULE_21___default().name), (vue3_histogram_slider__WEBPACK_IMPORTED_MODULE_21___default())).mount('#app');
+}).use(_router__WEBPACK_IMPORTED_MODULE_4__["default"]).use(vue3_beautiful_chat__WEBPACK_IMPORTED_MODULE_2__["default"]).use(vue3_radial_progress__WEBPACK_IMPORTED_MODULE_24__["default"]).use((vue3_apexcharts__WEBPACK_IMPORTED_MODULE_3___default())).component((vue3_histogram_slider__WEBPACK_IMPORTED_MODULE_22___default().name), (vue3_histogram_slider__WEBPACK_IMPORTED_MODULE_22___default())).mount('#app');
 
 /***/ }),
 
@@ -31430,7 +31483,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\na[data-v-8b69c97e]:hover{\n    text-decoration: none;\n}\n.my-flip-inner-wrapper[data-v-8b69c97e] {\n    perspective: 150rem;\n    -moz-perspective: 150rem;\n    position: relative;\n}\n.my-flip-side[data-v-8b69c97e] {\n    display: block;\n    height: 500px;\n    top: 0;\n    right: 0;\n    left: 0;\n    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);    \n    transition: all .8s ease;    \n    -webkit-backface-visibility: hidden;\n    backface-visibility: hidden;\n}\n.my-flip-back[data-v-8b69c97e] {\n    transform: rotateY(180deg);\n    color: #fff;\n    position: absolute;\n    z-index: -1;\n    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);\n    padding: 46px;\n}\n.my-flip-back-1[data-v-8b69c97e] {\n    background: linear-gradient(to right bottom, #ffb900, #ff7730);\n}\n.my-flip-back-2[data-v-8b69c97e] {\n    background: linear-gradient(to right bottom, #000428, #004e92);\n}\n.my-flip-back-3[data-v-8b69c97e] {\n    background: linear-gradient(to right bottom, #2998ff, #5643fa);\n}\n.my-flip-inner-wrapper:hover .my-flip-front[data-v-8b69c97e] {\n    transform: rotateY(-180deg);\n}\n.my-flip-inner-wrapper:hover .my-flip-back[data-v-8b69c97e] {\n    transform: rotateY(0);\n}\n.my-flip-image[data-v-8b69c97e] {\n    height: 15rem;\n    background-blend-mode: screen;\n    -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);\n            clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);\n}\n.my-flip-image img[data-v-8b69c97e]{\n    width: 100%;\n    height: 100%;\n    background-blend-mode: screen;\n    -o-object-fit: cover;\n       object-fit: cover;\n}\n.my-flip-heading[data-v-8b69c97e] {\n    margin: 0 0 15px;\n}\n.my-flip-details[data-v-8b69c97e] {\n    padding: 2rem;\n}\n.my-flip-details p[data-v-8b69c97e] {\n    font-size: 15px;\n    margin: 0;\n    line-height: 2;\n    color: #848484;\n}\n.my-flip-back-inner ul[data-v-8b69c97e] {\n    list-style: none;  \n    margin: 0 0 1.5rem;\n    padding: 0;\n}\n.my-flip-back-text  ul li[data-v-8b69c97e] {\n    text-align: center;\n    color:#fff;\n    font-size: 1rem;\n    padding: 0.8rem 0;\n}\n.my-flip-back-inner ul li[data-v-8b69c97e]:not(:last-child) {\n    border-bottom: 1px solid #ffffff;\n}\n.my-flip-price[data-v-8b69c97e] {\n    color: #fff;\n    text-align: center;\n    margin-bottom: 1rem;\n}\n.my-flip-price h3[data-v-8b69c97e] {\n    font-size: 3rem;\n    font-weight: 300;\n}\n.my-flip-btn-box[data-v-8b69c97e] {\n    text-align: center;\n}\n.my-flip-btn[data-v-8b69c97e]{\n    text-transform: uppercase;\n    padding: 1rem 1.8rem;\n    font-size: 1rem;\n    background-color: #fff;\n    color: #000;\n    border-radius: 10rem;\n    display: inline-block;\n    transition: all .2s;\n    color: initial;\n    position: relative;\n}\n.my-flip-btn[data-v-8b69c97e]:hover {\n    transform: translateY(-4px);\n    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);\n    color: #000;\n}\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "\na[data-v-8b69c97e]:hover{\r\n    text-decoration: none;\n}\n.my-flip-inner-wrapper[data-v-8b69c97e] {\r\n    perspective: 150rem;\r\n    -moz-perspective: 150rem;\r\n    position: relative;\n}\n.my-flip-side[data-v-8b69c97e] {\r\n    display: block;\r\n    height: 500px;\r\n    top: 0;\r\n    right: 0;\r\n    left: 0;\r\n    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);    \r\n    transition: all .8s ease;    \r\n    -webkit-backface-visibility: hidden;\r\n    backface-visibility: hidden;\n}\n.my-flip-back[data-v-8b69c97e] {\r\n    transform: rotateY(180deg);\r\n    color: #fff;\r\n    position: absolute;\r\n    z-index: -1;\r\n    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);\r\n    padding: 46px;\n}\n.my-flip-back-1[data-v-8b69c97e] {\r\n    background: linear-gradient(to right bottom, #ffb900, #ff7730);\n}\n.my-flip-back-2[data-v-8b69c97e] {\r\n    background: linear-gradient(to right bottom, #000428, #004e92);\n}\n.my-flip-back-3[data-v-8b69c97e] {\r\n    background: linear-gradient(to right bottom, #2998ff, #5643fa);\n}\n.my-flip-inner-wrapper:hover .my-flip-front[data-v-8b69c97e] {\r\n    transform: rotateY(-180deg);\n}\n.my-flip-inner-wrapper:hover .my-flip-back[data-v-8b69c97e] {\r\n    transform: rotateY(0);\n}\n.my-flip-image[data-v-8b69c97e] {\r\n    height: 15rem;\r\n    background-blend-mode: screen;\r\n    -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);\r\n            clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);\n}\n.my-flip-image img[data-v-8b69c97e]{\r\n    width: 100%;\r\n    height: 100%;\r\n    background-blend-mode: screen;\r\n    -o-object-fit: cover;\r\n       object-fit: cover;\n}\n.my-flip-heading[data-v-8b69c97e] {\r\n    margin: 0 0 15px;\n}\n.my-flip-details[data-v-8b69c97e] {\r\n    padding: 2rem;\n}\n.my-flip-details p[data-v-8b69c97e] {\r\n    font-size: 15px;\r\n    margin: 0;\r\n    line-height: 2;\r\n    color: #848484;\n}\n.my-flip-back-inner ul[data-v-8b69c97e] {\r\n    list-style: none;  \r\n    margin: 0 0 1.5rem;\r\n    padding: 0;\n}\n.my-flip-back-text  ul li[data-v-8b69c97e] {\r\n    text-align: center;\r\n    color:#fff;\r\n    font-size: 1rem;\r\n    padding: 0.8rem 0;\n}\n.my-flip-back-inner ul li[data-v-8b69c97e]:not(:last-child) {\r\n    border-bottom: 1px solid #ffffff;\n}\n.my-flip-price[data-v-8b69c97e] {\r\n    color: #fff;\r\n    text-align: center;\r\n    margin-bottom: 1rem;\n}\n.my-flip-price h3[data-v-8b69c97e] {\r\n    font-size: 3rem;\r\n    font-weight: 300;\n}\n.my-flip-btn-box[data-v-8b69c97e] {\r\n    text-align: center;\n}\n.my-flip-btn[data-v-8b69c97e]{\r\n    text-transform: uppercase;\r\n    padding: 1rem 1.8rem;\r\n    font-size: 1rem;\r\n    background-color: #fff;\r\n    color: #000;\r\n    border-radius: 10rem;\r\n    display: inline-block;\r\n    transition: all .2s;\r\n    color: initial;\r\n    position: relative;\n}\n.my-flip-btn[data-v-8b69c97e]:hover {\r\n    transform: translateY(-4px);\r\n    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);\r\n    color: #000;\n}\r\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -31454,7 +31507,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\n.app__content[data-v-d5f94a26] {\n    padding: 1.5rem 2rem;\n    border-radius: 7px;\n    background: #ffffff;\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n    box-shadow: var(--shadow);\n}\n.content__radial[data-v-d5f94a26] {\n    color: black;\n}\n.content__radial div[data-v-d5f94a26]:first-child {\n    display: flex;\n    align-items: center;\n    flex-direction: column;\n}\n.content__radial div small[data-v-d5f94a26] {\n    font-size: 1.3rem;\n    margin-right: 5px;\n}\n.content__radial div span[data-v-d5f94a26] {\n    font-size: 2rem;\n}\n.content__controls[data-v-d5f94a26] {\n    display: flex;\n    justify-content: space-around;\n    margin: 2rem 0;\n}\n.content__controls button[data-v-d5f94a26] {\n    outline: none;\n    border: none;\n    padding: 0.4rem 2rem;\n    font-size: 1.3rem;\n    background: var(--green-2);\n    border-radius: 2px;\n    color: black;\n    cursor: pointer;\n    transition: transform ease-in 0.14s;\n}\n.content__controls button[data-v-d5f94a26]:hover:not(:disabled) {\n    transform: scale(1.09);\n}\n.content__controls button[data-v-d5f94a26]:disabled {\n    background: rgb(131, 131, 131);\n}\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "\n.app__content[data-v-d5f94a26] {\r\n    padding: 1.5rem 2rem;\r\n    border-radius: 7px;\r\n    background: #ffffff;\r\n    display: flex;\r\n    flex-direction: column;\r\n    align-items: center;\r\n    box-shadow: var(--shadow);\n}\n.content__radial[data-v-d5f94a26] {\r\n    color: black;\n}\n.content__radial div[data-v-d5f94a26]:first-child {\r\n    display: flex;\r\n    align-items: center;\r\n    flex-direction: column;\n}\n.content__radial div small[data-v-d5f94a26] {\r\n    font-size: 1.3rem;\r\n    margin-right: 5px;\n}\n.content__radial div span[data-v-d5f94a26] {\r\n    font-size: 2rem;\n}\n.content__controls[data-v-d5f94a26] {\r\n    display: flex;\r\n    justify-content: space-around;\r\n    margin: 2rem 0;\n}\n.content__controls button[data-v-d5f94a26] {\r\n    outline: none;\r\n    border: none;\r\n    padding: 0.4rem 2rem;\r\n    font-size: 1.3rem;\r\n    background: var(--green-2);\r\n    border-radius: 2px;\r\n    color: black;\r\n    cursor: pointer;\r\n    transition: transform ease-in 0.14s;\n}\n.content__controls button[data-v-d5f94a26]:hover:not(:disabled) {\r\n    transform: scale(1.09);\n}\n.content__controls button[data-v-d5f94a26]:disabled {\r\n    background: rgb(131, 131, 131);\n}\r\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -31478,7 +31531,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\n.radial-progress[data-v-f2b6376c] {\n    flex: 1;\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n}\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "\n.radial-progress[data-v-f2b6376c] {\r\n    flex: 1;\r\n    display: flex;\r\n    flex-direction: column;\r\n    align-items: center;\n}\r\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -31502,7 +31555,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\n.radial-progress[data-v-3745d8a8] {\n    flex: 1;\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n}\n.draw_circle[data-v-3745d8a8] {\n    width: 140px;\n    height: 140px;\n    border-radius: 25px;\n    background: red;\n}\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "\n.radial-progress[data-v-3745d8a8] {\r\n    flex: 1;\r\n    display: flex;\r\n    flex-direction: column;\r\n    align-items: center;\n}\n.draw_circle[data-v-3745d8a8] {\r\n    width: 140px;\r\n    height: 140px;\r\n    border-radius: 25px;\r\n    background: red;\n}\r\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -31526,7 +31579,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\n.radial-progress[data-v-138354d5] {\n    flex: 1;\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n}\n.draw_circle[data-v-138354d5] {\n    width: 140px;\n    height: 140px;\n    border-radius: 25px;\n    background: red;\n}\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "\n.radial-progress[data-v-138354d5] {\r\n    flex: 1;\r\n    display: flex;\r\n    flex-direction: column;\r\n    align-items: center;\n}\n.draw_circle[data-v-138354d5] {\r\n    width: 140px;\r\n    height: 140px;\r\n    border-radius: 25px;\r\n    background: red;\n}\r\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -31550,7 +31603,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\n.radial-progress[data-v-4feb1149] {\n    flex: 1;\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n}\n.draw_circle[data-v-4feb1149] {\n    width: 140px;\n    height: 140px;\n    border-radius: 25px;\n    background: red;\n}\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "\n.radial-progress[data-v-4feb1149] {\r\n    flex: 1;\r\n    display: flex;\r\n    flex-direction: column;\r\n    align-items: center;\n}\n.draw_circle[data-v-4feb1149] {\r\n    width: 140px;\r\n    height: 140px;\r\n    border-radius: 25px;\r\n    background: red;\n}\r\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -31574,7 +31627,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\n.radial-progress[data-v-fdbda7da] {\n    flex: 1;\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n}\n.draw_circle[data-v-fdbda7da] {\n    width: 140px;\n    height: 140px;\n    border-radius: 25px;\n    background: red;\n}\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "\n.radial-progress[data-v-fdbda7da] {\r\n    flex: 1;\r\n    display: flex;\r\n    flex-direction: column;\r\n    align-items: center;\n}\n.draw_circle[data-v-fdbda7da] {\r\n    width: 140px;\r\n    height: 140px;\r\n    border-radius: 25px;\r\n    background: red;\n}\r\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -31598,7 +31651,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\n.radial-progress[data-v-4011960b] {\n    flex: 1;\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n}\n.draw_circle[data-v-4011960b] {\n    width: 140px;\n    height: 140px;\n    border-radius: 25px;\n    background: red;\n}\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "\n.radial-progress[data-v-4011960b] {\r\n    flex: 1;\r\n    display: flex;\r\n    flex-direction: column;\r\n    align-items: center;\n}\n.draw_circle[data-v-4011960b] {\r\n    width: 140px;\r\n    height: 140px;\r\n    border-radius: 25px;\r\n    background: red;\n}\r\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -31622,7 +31675,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\n.radial-progress[data-v-ccee460e] {\n    flex: 1;\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n}\n.draw_circle[data-v-ccee460e] {\n    width: 140px;\n    height: 140px;\n    border-radius: 25px;\n    background: red;\n}\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "\n.radial-progress[data-v-ccee460e] {\r\n    flex: 1;\r\n    display: flex;\r\n    flex-direction: column;\r\n    align-items: center;\n}\n.draw_circle[data-v-ccee460e] {\r\n    width: 140px;\r\n    height: 140px;\r\n    border-radius: 25px;\r\n    background: red;\n}\r\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -57774,6 +57827,34 @@ exports["default"] = (sfc, props) => {
 
 /***/ }),
 
+/***/ "./resources/js/components/App.vue":
+/*!*****************************************!*\
+  !*** ./resources/js/components/App.vue ***!
+  \*****************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _App_vue_vue_type_template_id_332fccf4__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./App.vue?vue&type=template&id=332fccf4 */ "./resources/js/components/App.vue?vue&type=template&id=332fccf4");
+/* harmony import */ var _App_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./App.vue?vue&type=script&lang=js */ "./resources/js/components/App.vue?vue&type=script&lang=js");
+/* harmony import */ var _var_www_html_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./node_modules/vue-loader/dist/exportHelper.js */ "./node_modules/vue-loader/dist/exportHelper.js");
+
+
+
+
+;
+const __exports__ = /*#__PURE__*/(0,_var_www_html_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__["default"])(_App_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__["default"], [['render',_App_vue_vue_type_template_id_332fccf4__WEBPACK_IMPORTED_MODULE_0__.render],['__file',"resources/js/components/App.vue"]])
+/* hot reload */
+if (false) {}
+
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__exports__);
+
+/***/ }),
+
 /***/ "./resources/js/components/Calendar.vue":
 /*!**********************************************!*\
   !*** ./resources/js/components/Calendar.vue ***!
@@ -58333,6 +58414,22 @@ if (false) {}
 
 /***/ }),
 
+/***/ "./resources/js/components/App.vue?vue&type=script&lang=js":
+/*!*****************************************************************!*\
+  !*** ./resources/js/components/App.vue?vue&type=script&lang=js ***!
+  \*****************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* reexport safe */ _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_App_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_0__["default"])
+/* harmony export */ });
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_App_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!../../../node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./App.vue?vue&type=script&lang=js */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/components/App.vue?vue&type=script&lang=js");
+ 
+
+/***/ }),
+
 /***/ "./resources/js/components/Calendar.vue?vue&type=script&lang=js":
 /*!**********************************************************************!*\
   !*** ./resources/js/components/Calendar.vue?vue&type=script&lang=js ***!
@@ -58634,6 +58731,22 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_StepTwo_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!../../../../node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./StepTwo.vue?vue&type=script&lang=js */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/components/loans/StepTwo.vue?vue&type=script&lang=js");
  
+
+/***/ }),
+
+/***/ "./resources/js/components/App.vue?vue&type=template&id=332fccf4":
+/*!***********************************************************************!*\
+  !*** ./resources/js/components/App.vue?vue&type=template&id=332fccf4 ***!
+  \***********************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "render": () => (/* reexport safe */ _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_templateLoader_js_ruleSet_1_rules_2_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_App_vue_vue_type_template_id_332fccf4__WEBPACK_IMPORTED_MODULE_0__.render)
+/* harmony export */ });
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_templateLoader_js_ruleSet_1_rules_2_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_App_vue_vue_type_template_id_332fccf4__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!../../../node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!../../../node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./App.vue?vue&type=template&id=332fccf4 */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/components/App.vue?vue&type=template&id=332fccf4");
+
 
 /***/ }),
 
