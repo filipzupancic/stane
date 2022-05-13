@@ -12,10 +12,6 @@ import Documents from '../components/Documents'
 import AddDocument from '../components/documents/AddDocument'
 import EditDocument from '../components/documents/EditDocument'
 import LoanSteps from '../components/loans/LoanSteps'
-import StepTwo from '../components/loans/StepTwo'
-import StepThree from '../components/loans/StepThree'
-import StepFour from '../components/loans/StepFour'
-import StepFive from '../components/loans/StepFive'
 import Calendar from '../components/Calendar'
 import Wallet from '../components/Wallet'
 
@@ -77,28 +73,8 @@ const routes = [
     },
     {
         path: '/kredit/prvi-korak',
-        name: 'step-one',
+        name: 'prvi-korak',
         component: LoanSteps
-    },
-    {
-        path: '/kredit/drugi-korak',
-        name: 'step-two',
-        component: StepTwo
-    },
-    {
-        path: '/kredit/tretji-korak',
-        name: 'step-three',
-        component: StepThree
-    },
-    {
-        path: '/kredit/cetrti-korak',
-        name: 'step-four',
-        component: StepFour
-    },
-    {
-        path: '/kredit/peti-korak',
-        name: 'step-five',
-        component: StepFive
     },
     {
         path: '/koledar',
