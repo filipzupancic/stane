@@ -128,7 +128,7 @@ import { ChevronRightIcon, HomeIcon } from '@heroicons/vue/solid'
 
 import Calculator from "./Calculator" 
 import Signature from "./Signature"
-import Documents from "../Documents"
+import LoanDocuments from "./LoanDocuments"
 const pages = [
   { name: 'kredit', href: '/kredit', current: false },
   { name: 'peti korak', href: '/kredit/prvi-korak', current: true },
@@ -152,7 +152,7 @@ export default defineComponent({
     setup() {
         var steps = ref([
             { idx:0,name: "Step 1", component:Calculator,status: "current" ,finished:false},
-            { idx:1,name: "Step 2", component:Documents,status: "upcoming",finished:false },
+            { idx:1,name: "Step 2", component:LoanDocuments,status: "upcoming",finished:false },
             { idx:2,name: "Step 3", component:Signature,status: "upcoming",finished:false },
             { idx:3,name: "Step 4", component:Signature,status: "upcoming",finished:false },
             { idx:4,name: "Step 5", component:Calculator,status: "upcoming", finished:false},

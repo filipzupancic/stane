@@ -5,53 +5,28 @@
                 <p
                     class="mt-1 text-4xl font-extrabold text-gray-900 sm:text-5xl sm:tracking-tight lg:text-6xl"
                 >
-                    Hej, Petra.
+                    Dokumenti
                 </p>
                 <p class="max-w-xl mt-5 mx-auto text-xl text-gray-500">
-                    Tvoji dokumenti.
+                    Dodaj dokumente
                 </p>
-                <div class="mt-8 flex justify-center">
-                    <div class="inline-flex rounded-md shadow">
-                        <a
-                            href="/denarnica"
-                            class="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-emerald-600 hover:bg-emerald-700"
-                        >
-                            Denarnica
-                        </a>
-                    </div>
-                    <div class="ml-3 inline-flex">
-                        <a
-                            href="/dokumenti"
-                            class="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-emerald-700 bg-emerald-100 hover:bg-emerald-200"
-                        >
-                            Dokumenti
-                        </a>
-                    </div>
-                </div>
+            
             </div>
         </div>
-        <div
+        <div 
             class="overflow-hidden overflow-x-auto min-w-full align-middle sm:rounded-md"
         >
-            <div class="flex place-content-center mb-4">
-                <div
-                    class="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-full text-blue-700 bg-blue-100 hover:bg-blue-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
-                >
-                    <router-link
-                        :to="{ name: 'documents.create' }"
-                        class="text-sm font-medium"
-                        >Dodaj dokument</router-link
-                    >
-                </div>
-            </div>
-            <ul
+
+        <dodaj-dokument></dodaj-dokument>    
+
+             <ul 
                 role="list"
                 class="mt-3 grid grid-cols-1 gap-5 sm:gap-6 sm:grid-cols-2 lg:grid-cols-4"
             >
                 <template v-for="item in documents" :key="item.id">
                     <li class="col-span-1 flex shadow-sm rounded-md">
-                        <div
-                            class="flex-shrink-0 flex items-center justify-center w-16 bg-emerald-600 text-white text-sm font-medium rounded-l-md"
+                        <div 
+                           @click="finishedStatus" class="flex-shrink-0 flex items-center justify-center w-16 bg-emerald-600 text-white text-sm font-medium rounded-l-md"
                         >
                             PDF
                         </div>
@@ -96,10 +71,12 @@
 </template>
 
 <script>
-import useDocuments from "../composables/documents";
+import useDocuments from "../../composables/documents";
 import { defineComponent, onMounted } from "vue";
+import AddDocument from "../documents/AddDocument"
 
 export default defineComponent({
+    emits:['finishedStatusEvent'],
     data() {
         return {
 
@@ -108,9 +85,18 @@ export default defineComponent({
     methods: {
       
     },
-    setup() {
+    components:{
+        "dodaj-dokument":AddDocument
+
+    },
+    setup(props, { emit }) {
+
         const { documents, getDocuments, deleteDocument } = useDocuments();
         onMounted(getDocuments);
+        const finishedStatus= ()=>{
+
+            emit('finishedStatusEvent',true)
+        }
         const deleteTheDocument = async (id) => {
             if (!window.confirm("Are you sure?")) {
                 return;
@@ -120,6 +106,7 @@ export default defineComponent({
         };
         return {
             documents,
+            finishedStatus,
             deleteTheDocument,
         };
     },
